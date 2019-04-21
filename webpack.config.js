@@ -8,7 +8,7 @@ const VENDOR_LIBS = [
 
 module.exports = {
   entry: {
-    realEstate: './assets/js/realEstate/app.js',
+    app  : './assets/js/realEstate/app.js',
     vendor: VENDOR_LIBS
   },
   output: { filename: '[name].js',
