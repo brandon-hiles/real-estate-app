@@ -1,3 +1,10 @@
+#content-area {
+  overflow: auto;
+  width: 100%;
+  background: black;
+  min-height: 100vh;
+}
+
 #filter{
     background: $grey;
     width: 30%;
@@ -27,7 +34,7 @@
         margin-bottom: 25px;
         width: 100%;
     }
- 
+
     .filters{
         .title{
             font-size: 0.9rem;
@@ -63,6 +70,8 @@
     float: left;
     display: inline-block;
     padding: 15px;
+    background: $offwhite;
+
 
     .search-area{
         input[type="text"] {
@@ -70,8 +79,120 @@
             background: transparent;
             font-size: 2rem;
             border: none;
-            border-bottom: 2px solid $darkgrey;
+            border-bottom: 1px solid $lightgrey;
             margin-bottom: 20px;
+            color: $lightgrey;
         }
+    }
+
+    .sortby-area {
+      margin-bottom: 20px;
+
+      .results {
+        color: $lightgrey;
+        font-size: .8rem;
+        display: inline-block;
+      }
+      .sort-options {
+        float: right;
+        select {
+          font-size: .9rem;
+          font-weight: 300;
+          border: 1px solid $lightgrey;
+          background: transparent;
+          padding: 20px;
+          display: inline-block;
+          margin-right: 15px;
+          vertical-align: top;
+        }
+        .view {
+          display: inline-block;
+
+          .fa {
+            font-size: 1.5rem;
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+
+    .listings-results {
+      margin-bottom: 60px;
+
+
+      .listing {
+        background: #fff;
+        width: 33.33%;
+        border-radius: 5px;
+        -webkit-box-shadow: 0px 9px 54px 4px rgba(176,176,176,1);
+        -moz-box-shadow: 0px 9px 54px 4px rgba(176,176,176,1);
+        box-shadow: 0px 9px 54px 4px rgba(176,176,176,1);
+      }
+
+      .listing-img {
+        color: white;
+        padding: 15px;
+        position: relative;
+        background: url("https://tobiarchitects.com/wp-content/uploads/2017/11/1.1-min.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        min-height: 200px;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        -moz-border-radius-topleft: 5px;
+        -moz-border-radius-topright: 5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+
+        .details {
+          padding: 20px;
+          position: absolute;
+          top: 0;
+          left:0;
+          bottom:0;
+          right:0;
+
+          -webkit-border-top-left-radius: 5px;
+          -webkit-border-top-right-radius: 5px;
+          -moz-border-radius-topleft: 5px;
+          -moz-border-radius-topright: 5px;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7131f9+0,c81edb+100 */
+          background: rgba(113,49,249, 0.8); /* Old browsers */
+          background: -webkit-linear-gradient(bottom left, rgba(113,49,249,0.8) 0%, rgba(200,30,219,0.8) 100%);
+          background: -o-linear-gradient(bottom left, rgba(113,49,249,0.8) 0%, rgba(200,30,219,0.8) 100%);
+          background: linear-gradient(to top right, rgba(113,49,249,0.8) 0%, rgba(200,30,219,0.8) 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7131f9', endColorstr='#c81edb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+          .user-img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 2px solid white;
+            display: inline-block;
+          }
+
+          .user-details {
+            vertical-align: top;
+            display: inline-block;
+            width: 70%;
+            margin-left: 20px;
+
+            .user-name {
+              font-weight: 300;
+              font-size: 0.9rem;
+              display: block;
+              color: rgba(255, 255, 255, 1);
+            }
+            .post-date {
+              display: block;
+              color: rgba(255,255,255,.8);
+            }
+          }
+        }
+      }
     }
 }
