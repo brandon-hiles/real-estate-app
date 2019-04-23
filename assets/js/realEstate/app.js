@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <section id="content-areas">
+        <section id="content-area">
           <Filter />
           <Listings />
         </section>
