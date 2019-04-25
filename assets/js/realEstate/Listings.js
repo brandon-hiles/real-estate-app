@@ -13,11 +13,11 @@ export default class Listings extends Component {
 
     var {listingsData} = this.props
 
-    return listingsData.map((listing) => {
-      return ( <div className="col-md-3">
+    return listingsData.map((listing, index) => {
+      return ( <div className="col-md-3" key={index}>
             <div className="listing">
-              <div className="listing-img">
-                <span className="address"> 420 High Wood Falls </span>
+              <div className="listing-img" style={{background: `url("${listing.image}") no-repeat center center`}}>
+                <span className="address"> {listing.address} </span>
                 <div className="details">
                   <div className="col-md-3">
                     <div className="user-img"></div>
@@ -33,7 +33,7 @@ export default class Listings extends Component {
                       </div>
                       <div className="bedrooms">
                         <i className="fa fa-bed" aria-hidden="true"></i>
-                        <span>3 bedrooms</span>
+                        <span>{listing.rooms} bedrooms</span>
                       </div>
                     </div>
 
@@ -45,8 +45,8 @@ export default class Listings extends Component {
               </div>
 
               <div className="bottom-info">
-                <span className="price"> $1000 / month </span>
-                <span className="location"> <i className="fa fa-map-marker" aria-hidden="true"></i> RidgeWood, NY </span>
+                <span className="price"> ${listing.price} </span>
+                <span className="location"> <i className="fa fa-map-marker" aria-hidden="true"></i> {listing.city}, {listing.state} </span>
               </div>
             </div>
           </div>)
