@@ -279,6 +279,8 @@
 }
 
 #pagination {
+  width:100%;
+  display: block;
   text-align: center;
 
   .pages{
@@ -302,16 +304,4 @@
       }
     }
   }
-}
-
-.col-md-3 {
-  width: 25%;
-  display: inline-block;
-  vertical-align: top;
-  padding: 0px 15px;
-}
-
-.col-md-9 {
-  width: 75%;
-  display: inline-block;
 }
