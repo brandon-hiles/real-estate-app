@@ -23,13 +23,27 @@ class App extends Component {
       gym: false,
       swimming_pool: false,
       filteredData: listingsData,
-      populateFormsData: ''
+      populateFormsData: '',
+      sortby: 'price-dsc',
+      view: 'box',
+      search: ''
     }
 
     this.change = this.change.bind(this)
     this.filteredData = this.filteredData.bind(this)
     this.populateForms = this.populateForms.bind(this)
     this.getUniqueElements = this.getUniqueElements.bind(this)
+    this.changeView = this.changeView.bind(this)
+  }
+
+  componentWillMount() {
+    var listingsData = this.state.listingsData.sort((a,b) => {
+      return a.price - b.price
+    })
+
+    this.setState({
+      listingsData
+    })
   }
 
   change(event) {
@@ -41,6 +55,12 @@ class App extends Component {
     }, () => {
       console.log(this.state)
       this.filteredData()
+    })
+  }
+
+  changeView(view) {
+    this.setState({
+      view: view
     })
   }
 
@@ -60,6 +80,30 @@ class App extends Component {
     if (this.state.homeType != "All") {
       newData = newData.filter((item) => {
         return item.homeType == this.state.homeType
+      })
+    }
+
+    if (this.state.sortby == "price-dsc") {
+      newData = newData.sort((a,b) => {
+        return a.price - b.price
+      })
+    }
+
+    if (this.state.sortby == "price-asc") {
+      newData = newData.sort((a,b) => {
+        return b.price - a.price
+      })
+    }
+
+    if (this.state.search != 'null') {
+      newData = newData.filter((item) => {
+        var city = item.city.toLowerCase()
+        var searchText = this.state.search.toLowerCase()
+        var n = city.match(searchText)
+
+        if (n != null) {
+          return true
+        }
       })
     }
 
@@ -83,7 +127,7 @@ class App extends Component {
 
     list = new Set(list) // Convert to set to get unique elements
     list = [...list] // Convert back to array
-    return list
+    return list.sort() // Sort the list
   }
 
   populateForms() {
@@ -91,7 +135,6 @@ class App extends Component {
      let cities = this.getUniqueElements("city")
      let homeTypes = this.getUniqueElements("homeType")
      let bedrooms = this.getUniqueElements("rooms")
-
     this.setState({
       populateFormsData: {
         homeTypes,
@@ -109,7 +152,7 @@ class App extends Component {
         <Header />
         <section id="content-area">
           <Filter change={this.change} globalState={this.state} populateAction={this.populateForms} />
-          <Listings listingsData={this.state.filteredData} />
+          <Listings listingsData={this.state.filteredData} change={this.change} globalState={this.state} changeView = {this.changeView}/>
         </section>
        </div>
     )
