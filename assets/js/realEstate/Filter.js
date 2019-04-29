@@ -64,7 +64,7 @@ export default class Filter extends Component {
             {this.cities()}
           </select>
           <label htmlFor="hometype"><span className="header">Home Type </span></label>
-          <select name="hometype" className="filters homeType" onChange={this.props.change}>
+          <select name="homeType" className="filters homeType" onChange={this.props.change}>
             <option value="All"> All Homes </option>
             {this.homeTypes()}
           </select>
