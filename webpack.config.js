@@ -1,4 +1,3 @@
-
 const path = require('path');
 const webpack = require('webpack')
 
@@ -8,7 +7,7 @@ const VENDOR_LIBS = [
 
 module.exports = {
   entry: {
-    app  : './src/js/app.js',
+    app  : './src/js/client/app.js',
     vendor: VENDOR_LIBS
   },
   output: { filename: '[name].js',

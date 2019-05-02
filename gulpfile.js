@@ -7,8 +7,8 @@ var exec = require('child_process').exec;
 
 gulp.task('default', ['styles', 'webpack', 'browser-sync'], () => {
   gulp.watch('./src/sass/**/*', ['styles'])
-  gulp.watch('./src/js/**/*', ['webpack'])
-  gulp.watch(['./public/**/*', './public/*', '!public/js/**/.#*js', '!public/css/**/.#*css']).on('change', reload)
+  gulp.watch('./src/js/client/**/*', ['webpack'])
+  gulp.watch(['./public/**/*', './public/*', '!public/js/client/**/.#*js', '!public/css/**/.#*css']).on('change', reload)
 })
 
 gulp.task('styles', () => {
