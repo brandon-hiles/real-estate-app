@@ -68,7 +68,8 @@ class App extends Component {
     var newData = this.state.listingsData.filter((item) => {
       let priceCondition = item.price >= this.state.min_price && item.price <= this.state.max_price;
       let floorCondition = item.floorSpace >= this.state.min_floor_space && item.floorSpace <= this.state.max_floor_space
-      return priceCondition && floorCondition && item.rooms >= this.state.bedrooms
+      let bedRoomCondition = item.rooms >= this.state.bedrooms
+      return priceCondition && floorCondition && bedRoomCondition;
     })
 
     if (this.state.city != "All") {
@@ -104,6 +105,30 @@ class App extends Component {
         if (n != null) {
           return true
         }
+      })
+    }
+
+    if (this.state.elevator == true) {
+      newData = newData.filter((item) => {
+        return item.extras.elevator == true;
+      })
+    }
+
+    if (this.state.swimming_pool == true) {
+      newData = newData.filter((item) => {
+        return item.extras.pool == true;
+      })
+    }
+
+    if (this.state.finished_basement == true) {
+      newData = newData.filter((item) => {
+        return item.extras.finished_basement == true;
+      })
+    }
+
+    if (this.state.gym == true) {
+      newData = newData.filter((item) => {
+        return item.extras.gym == true;
       })
     }
 
