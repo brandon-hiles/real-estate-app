@@ -17,7 +17,7 @@ export default class LongView extends Component {
     }
 
     return listingsData.map((listing, index) => {
-        <div className="col-md-12 col-lg-6" key={index}>
+        return (<div className="col-md-12 col-lg-6" key={index}>
           <div className="listing">
             <div className="listing-img" style={{background: `url("${listing.image}") no-repeat center center`}}>
               <span className="address"> {listing.address} </span>
@@ -52,7 +52,7 @@ export default class LongView extends Component {
             <span className="location"> <i className="fa fa-map-marker" aria-hidden="true"></i> {listing.city}, {listing.state} </span>
           </div>
         </div>
-      </div>
+      </div>)
     }
   )
 }
