@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 231:
+/***/ 235:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(59);
+var _react = __webpack_require__(17);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -117,7 +117,12 @@ var Filter = function (_Component) {
           _react2.default.createElement(
             'label',
             { htmlFor: 'city' },
-            'City'
+            ' ',
+            _react2.default.createElement(
+              'span',
+              { className: 'header' },
+              'City '
+            )
           ),
           _react2.default.createElement(
             'select',
@@ -131,8 +136,12 @@ var Filter = function (_Component) {
           ),
           _react2.default.createElement(
             'label',
-            { htmlFor: 'city' },
-            'Home Type'
+            { htmlFor: 'hometype' },
+            _react2.default.createElement(
+              'span',
+              { className: 'header' },
+              'Home Type '
+            )
           ),
           _react2.default.createElement(
             'select',
@@ -146,8 +155,12 @@ var Filter = function (_Component) {
           ),
           _react2.default.createElement(
             'label',
-            { htmlFor: 'city' },
-            'Bedrooms'
+            { htmlFor: 'bedrooms' },
+            _react2.default.createElement(
+              'span',
+              { className: 'header' },
+              'Bedrooms '
+            )
           ),
           _react2.default.createElement(
             'select',
@@ -237,7 +250,7 @@ exports.default = Filter;
 
 /***/ }),
 
-/***/ 232:
+/***/ 236:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -249,9 +262,27 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(59);
+var _react = __webpack_require__(17);
 
 var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(563);
+
+var _about = __webpack_require__(245);
+
+var _about2 = _interopRequireDefault(_about);
+
+var _createAds = __webpack_require__(246);
+
+var _createAds2 = _interopRequireDefault(_createAds);
+
+var _login = __webpack_require__(247);
+
+var _login2 = _interopRequireDefault(_login);
+
+var _register = __webpack_require__(248);
+
+var _register2 = _interopRequireDefault(_register);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -321,7 +352,7 @@ exports.default = Header;
 
 /***/ }),
 
-/***/ 233:
+/***/ 237:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -333,9 +364,17 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(59);
+var _react = __webpack_require__(17);
 
 var _react2 = _interopRequireDefault(_react);
+
+var _BoxView = __webpack_require__(242);
+
+var _BoxView2 = _interopRequireDefault(_BoxView);
+
+var _LongView = __webpack_require__(243);
+
+var _LongView2 = _interopRequireDefault(_LongView);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -363,8 +402,6 @@ var Listings = function (_Component) {
   _createClass(Listings, [{
     key: 'loopListings',
     value: function loopListings() {
-      var _this2 = this;
-
       var listingsData = this.props.listingsData;
 
 
@@ -372,213 +409,13 @@ var Listings = function (_Component) {
         return "Sorry your filter did not match any listing";
       }
 
-      return listingsData.map(function (listing, index) {
-        if (_this2.props.globalState.view == 'box') {
-          // Box view
-          return _react2.default.createElement(
-            'div',
-            { className: 'col-md-3', key: index },
-            _react2.default.createElement(
-              'div',
-              { className: 'listing' },
-              _react2.default.createElement(
-                'div',
-                { className: 'listing-img', style: { background: 'url("' + listing.image + '") no-repeat center center' } },
-                _react2.default.createElement(
-                  'span',
-                  { className: 'address' },
-                  ' ',
-                  listing.address,
-                  ' '
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'details' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-3' },
-                    _react2.default.createElement('div', { className: 'user-img' })
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-9' },
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'user-details' },
-                      _react2.default.createElement(
-                        'span',
-                        { className: 'user-name' },
-                        ' Nina Smith '
-                      ),
-                      _react2.default.createElement(
-                        'span',
-                        { className: 'post-date' },
-                        ' 05/05/2017'
-                      )
-                    ),
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'listing-details' },
-                      _react2.default.createElement(
-                        'div',
-                        { className: 'floor-space' },
-                        _react2.default.createElement('i', { className: 'fa fa-square-o', 'aria-hidden': 'true' }),
-                        ' ',
-                        _react2.default.createElement(
-                          'span',
-                          null,
-                          listing.floorSpace,
-                          'ft\xB2'
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'div',
-                        { className: 'bedrooms' },
-                        _react2.default.createElement('i', { className: 'fa fa-bed', 'aria-hidden': 'true' }),
-                        _react2.default.createElement(
-                          'span',
-                          null,
-                          listing.rooms,
-                          ' bedrooms'
-                        )
-                      )
-                    ),
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'view-btn' },
-                      'View Listing'
-                    )
-                  )
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'bottom-info' },
-                _react2.default.createElement(
-                  'span',
-                  { className: 'price' },
-                  ' $',
-                  listing.price,
-                  ' '
-                ),
-                _react2.default.createElement(
-                  'span',
-                  { className: 'location' },
-                  ' ',
-                  _react2.default.createElement('i', { className: 'fa fa-map-marker', 'aria-hidden': 'true' }),
-                  ' ',
-                  listing.city,
-                  ', ',
-                  listing.state,
-                  ' '
-                )
-              )
-            )
-          );
-        } else {
-          // Long view
-          return _react2.default.createElement(
-            'div',
-            { className: 'col-md-12 col-lg-6', key: index },
-            _react2.default.createElement(
-              'div',
-              { className: 'listing' },
-              _react2.default.createElement(
-                'div',
-                { className: 'listing-img', style: { background: 'url("' + listing.image + '") no-repeat center center' } },
-                _react2.default.createElement(
-                  'span',
-                  { className: 'address' },
-                  ' ',
-                  listing.address,
-                  ' '
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'details' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-3' },
-                    _react2.default.createElement('div', { className: 'user-img' })
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-9' },
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'user-details' },
-                      _react2.default.createElement(
-                        'span',
-                        { className: 'user-name' },
-                        ' Nina Smith '
-                      ),
-                      _react2.default.createElement(
-                        'span',
-                        { className: 'post-date' },
-                        ' 05/05/2017'
-                      )
-                    ),
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'listing-details' },
-                      _react2.default.createElement(
-                        'div',
-                        { className: 'floor-space' },
-                        _react2.default.createElement('i', { className: 'fa fa-square-o', 'aria-hidden': 'true' }),
-                        ' ',
-                        _react2.default.createElement(
-                          'span',
-                          null,
-                          listing.floorSpace,
-                          'ft\xB2'
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'div',
-                        { className: 'bedrooms' },
-                        _react2.default.createElement('i', { className: 'fa fa-bed', 'aria-hidden': 'true' }),
-                        _react2.default.createElement(
-                          'span',
-                          null,
-                          listing.rooms,
-                          ' bedrooms'
-                        )
-                      )
-                    ),
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'view-btn' },
-                      'View Listing'
-                    )
-                  )
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'bottom-info' },
-                _react2.default.createElement(
-                  'span',
-                  { className: 'price' },
-                  ' $',
-                  listing.price,
-                  ' '
-                ),
-                _react2.default.createElement(
-                  'span',
-                  { className: 'location' },
-                  ' ',
-                  _react2.default.createElement('i', { className: 'fa fa-map-marker', 'aria-hidden': 'true' }),
-                  ' ',
-                  listing.city,
-                  ', ',
-                  listing.state,
-                  ' '
-                )
-              )
-            )
-          );
-        }
-      });
+      if (this.props.globalState.view == 'box') {
+        // Box view
+        return _react2.default.createElement(_BoxView2.default, { listingsData: listingsData });
+      } else {
+        // Long view
+        return _react2.default.createElement(_LongView2.default, { listingsData: listingsData });
+      }
     }
   }, {
     key: 'render',
@@ -689,7 +526,7 @@ exports.default = Listings;
 
 /***/ }),
 
-/***/ 234:
+/***/ 238:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -705,7 +542,12 @@ var listingsData = [{
   rooms: 3,
   price: 220000,
   floorSpace: 2000,
-  extras: ['elevator', 'gym'],
+  extras: {
+    elevator: true,
+    gym: true,
+    finished_basement: false,
+    pool: false
+  },
   homeType: 'Apartment',
   image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb44VAzO907fDCghYaRdW55LnX40bzhMH7JL5c_fog_mWLJwFmeQ'
 }, {
@@ -715,7 +557,12 @@ var listingsData = [{
   rooms: 4,
   price: 5000000,
   floorSpace: 10000,
-  extras: ['elevator', 'gym'],
+  extras: {
+    elevator: true,
+    gym: false,
+    finished_basement: false,
+    pool: true
+  },
   homeType: 'Studio',
   image: 'https://s-ec.bstatic.com/images/hotel/max1024x768/735/73580604.jpg'
 }, {
@@ -725,7 +572,12 @@ var listingsData = [{
   rooms: 4,
   price: 2400000,
   floorSpace: 6000,
-  extras: ['elevator', 'gym'],
+  extras: {
+    elevator: false,
+    gym: true,
+    finished_basement: true,
+    pool: true
+  },
   homeType: 'Ranch',
   image: 'https://g5-assets-cld-res.cloudinary.com/image/upload/q_auto,f_auto,c_fill,g_center,h_1100,w_2000/v1504090383/g5/g5-c-i7yxybw5-mission-rock-single/g5-cl-iap27qrg-mountain-view-apartment-homes/uploads/interior-4.jpg'
 }, {
@@ -735,7 +587,12 @@ var listingsData = [{
   rooms: 2,
   price: 2200000,
   floorSpace: 5000,
-  extras: ['elevator', 'gym'],
+  extras: {
+    elevator: false,
+    gym: true,
+    finished_basement: false,
+    pool: true
+  },
   homeType: 'Studio',
   image: 'https://07f138315bb5e97f9e43-31068357019044cca7c8e84d92de0d99.ssl.cf3.rackcdn.com/1024x768/56587_11491_001.jpg'
 }, {
@@ -745,7 +602,12 @@ var listingsData = [{
   rooms: 2,
   price: 100000,
   floorSpace: 4000,
-  extras: ['elevator', 'gym'],
+  extras: {
+    elevator: true,
+    gym: true,
+    finished_basement: true,
+    pool: true
+  },
   homeType: 'Apartment',
   image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDELw8AmhnKoNtnlmfe1yIH-Ndkw-8dRzEtumfzcqtL_PXZvf0dQ'
 }];
@@ -754,7 +616,347 @@ exports.default = listingsData;
 
 /***/ }),
 
-/***/ 238:
+/***/ 242:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(17);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var BoxView = function (_Component) {
+  _inherits(BoxView, _Component);
+
+  function BoxView() {
+    _classCallCheck(this, BoxView);
+
+    var _this = _possibleConstructorReturn(this, (BoxView.__proto__ || Object.getPrototypeOf(BoxView)).call(this));
+
+    _this.state = {
+      name: "Brandon"
+    };
+    _this.view = _this.view.bind(_this);
+    return _this;
+  }
+
+  _createClass(BoxView, [{
+    key: "view",
+    value: function view() {
+      var listingsData = this.props.listingsData;
+
+
+      if (listingsData == undefined || listingsData.length == 0) {
+        return "Sorry your filter did not match any listing";
+      }
+
+      return listingsData.map(function (listing, index) {
+        return _react2.default.createElement(
+          "div",
+          { className: "col-md-3", key: index },
+          _react2.default.createElement(
+            "div",
+            { className: "listing" },
+            _react2.default.createElement(
+              "div",
+              { className: "listing-img", style: { background: "url(\"" + listing.image + "\") no-repeat center center" } },
+              _react2.default.createElement(
+                "span",
+                { className: "address" },
+                " ",
+                listing.address,
+                " "
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "details" },
+                _react2.default.createElement(
+                  "div",
+                  { className: "col-md-3" },
+                  _react2.default.createElement("div", { className: "user-img" })
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "col-md-9" },
+                  _react2.default.createElement(
+                    "div",
+                    { className: "user-details" },
+                    _react2.default.createElement(
+                      "span",
+                      { className: "user-name" },
+                      " Nina Smith "
+                    ),
+                    _react2.default.createElement(
+                      "span",
+                      { className: "post-date" },
+                      " 05/05/2017"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "listing-details" },
+                    _react2.default.createElement(
+                      "div",
+                      { className: "floor-space" },
+                      _react2.default.createElement("i", { className: "fa fa-square-o", "aria-hidden": "true" }),
+                      " ",
+                      _react2.default.createElement(
+                        "span",
+                        null,
+                        listing.floorSpace,
+                        "ft\xB2"
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "div",
+                      { className: "bedrooms" },
+                      _react2.default.createElement("i", { className: "fa fa-bed", "aria-hidden": "true" }),
+                      _react2.default.createElement(
+                        "span",
+                        null,
+                        listing.rooms,
+                        " bedrooms"
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "view-btn" },
+                    "View Listing"
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "bottom-info" },
+              _react2.default.createElement(
+                "span",
+                { className: "price" },
+                " $",
+                listing.price,
+                " "
+              ),
+              _react2.default.createElement(
+                "span",
+                { className: "location" },
+                " ",
+                _react2.default.createElement("i", { className: "fa fa-map-marker", "aria-hidden": "true" }),
+                " ",
+                listing.city,
+                ", ",
+                listing.state,
+                " "
+              )
+            )
+          )
+        );
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "section",
+        { className: "listings-results" },
+        this.view()
+      );
+    }
+  }]);
+
+  return BoxView;
+}(_react.Component);
+
+exports.default = BoxView;
+
+/***/ }),
+
+/***/ 243:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(17);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var LongView = function (_Component) {
+  _inherits(LongView, _Component);
+
+  function LongView() {
+    _classCallCheck(this, LongView);
+
+    var _this = _possibleConstructorReturn(this, (LongView.__proto__ || Object.getPrototypeOf(LongView)).call(this));
+
+    _this.state = {
+      name: "Brandon"
+    };
+    _this.view = _this.view.bind(_this);
+    return _this;
+  }
+
+  _createClass(LongView, [{
+    key: "view",
+    value: function view() {
+      var listingsData = this.props.listingsData;
+
+
+      if (listingsData == undefined || listingsData.length == 0) {
+        return "Sorry your filter did not match any listing";
+      }
+
+      return listingsData.map(function (listing, index) {
+        return _react2.default.createElement(
+          "div",
+          { className: "col-md-12 col-lg-6", key: index },
+          _react2.default.createElement(
+            "div",
+            { className: "listing" },
+            _react2.default.createElement(
+              "div",
+              { className: "listing-img", style: { background: "url(\"" + listing.image + "\") no-repeat center center" } },
+              _react2.default.createElement(
+                "span",
+                { className: "address" },
+                " ",
+                listing.address,
+                " "
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "details" },
+                _react2.default.createElement(
+                  "div",
+                  { className: "col-md-3" },
+                  _react2.default.createElement("div", { className: "user-img" })
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "col-md-9" },
+                  _react2.default.createElement(
+                    "div",
+                    { className: "user-details" },
+                    _react2.default.createElement(
+                      "span",
+                      { className: "user-name" },
+                      " Nina Smith "
+                    ),
+                    _react2.default.createElement(
+                      "span",
+                      { className: "post-date" },
+                      " 05/05/2017"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "listing-details" },
+                    _react2.default.createElement(
+                      "div",
+                      { className: "floor-space" },
+                      _react2.default.createElement("i", { className: "fa fa-square-o", "aria-hidden": "true" }),
+                      " ",
+                      _react2.default.createElement(
+                        "span",
+                        null,
+                        listing.floorSpace,
+                        "ft\xB2"
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "div",
+                      { className: "bedrooms" },
+                      _react2.default.createElement("i", { className: "fa fa-bed", "aria-hidden": "true" }),
+                      _react2.default.createElement(
+                        "span",
+                        null,
+                        listing.rooms,
+                        " bedrooms"
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "view-btn" },
+                    "View Listing"
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "bottom-info" },
+              _react2.default.createElement(
+                "span",
+                { className: "price" },
+                " $",
+                listing.price,
+                " "
+              ),
+              _react2.default.createElement(
+                "span",
+                { className: "location" },
+                " ",
+                _react2.default.createElement("i", { className: "fa fa-map-marker", "aria-hidden": "true" }),
+                " ",
+                listing.city,
+                ", ",
+                listing.state,
+                " "
+              )
+            )
+          )
+        );
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "section",
+        { className: "listings-results" },
+        this.view()
+      );
+    }
+  }]);
+
+  return LongView;
+}(_react.Component);
+
+exports.default = LongView;
+
+/***/ }),
+
+/***/ 244:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -762,27 +964,27 @@ exports.default = listingsData;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(59);
+var _react = __webpack_require__(17);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(101);
+var _reactDom = __webpack_require__(105);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _Header = __webpack_require__(232);
+var _Header = __webpack_require__(236);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Filter = __webpack_require__(231);
+var _Filter = __webpack_require__(235);
 
 var _Filter2 = _interopRequireDefault(_Filter);
 
-var _Listings = __webpack_require__(233);
+var _Listings = __webpack_require__(237);
 
 var _Listings2 = _interopRequireDefault(_Listings);
 
-var _listingsData = __webpack_require__(234);
+var _listingsData = __webpack_require__(238);
 
 var _listingsData2 = _interopRequireDefault(_listingsData);
 
@@ -874,7 +1076,8 @@ var App = function (_Component) {
       var newData = this.state.listingsData.filter(function (item) {
         var priceCondition = item.price >= _this3.state.min_price && item.price <= _this3.state.max_price;
         var floorCondition = item.floorSpace >= _this3.state.min_floor_space && item.floorSpace <= _this3.state.max_floor_space;
-        return priceCondition && floorCondition && item.rooms >= _this3.state.bedrooms;
+        var bedRoomCondition = item.rooms >= _this3.state.bedrooms;
+        return priceCondition && floorCondition && bedRoomCondition;
       });
 
       if (this.state.city != "All") {
@@ -910,6 +1113,30 @@ var App = function (_Component) {
           if (n != null) {
             return true;
           }
+        });
+      }
+
+      if (this.state.elevator == true) {
+        newData = newData.filter(function (item) {
+          return item.extras.elevator == true;
+        });
+      }
+
+      if (this.state.swimming_pool == true) {
+        newData = newData.filter(function (item) {
+          return item.extras.pool == true;
+        });
+      }
+
+      if (this.state.finished_basement == true) {
+        newData = newData.filter(function (item) {
+          return item.extras.finished_basement == true;
+        });
+      }
+
+      if (this.state.gym == true) {
+        newData = newData.filter(function (item) {
+          return item.extras.gym == true;
         });
       }
 
@@ -977,6 +1204,230 @@ var app = document.getElementById('app');
 
 _reactDom2.default.render(_react2.default.createElement(App, null), app);
 
+/***/ }),
+
+/***/ 245:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(17);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var About = function (_Component) {
+  _inherits(About, _Component);
+
+  function About() {
+    _classCallCheck(this, About);
+
+    var _this = _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).call(this));
+
+    _this.state = {
+      name: 'Brandon'
+    };
+    return _this;
+  }
+
+  _createClass(About, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'h1',
+        null,
+        ' About Us Page '
+      );
+    }
+  }]);
+
+  return About;
+}(_react.Component);
+
+exports.default = About;
+
+/***/ }),
+
+/***/ 246:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(17);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var CreateAds = function (_Component) {
+  _inherits(CreateAds, _Component);
+
+  function CreateAds() {
+    _classCallCheck(this, CreateAds);
+
+    var _this = _possibleConstructorReturn(this, (CreateAds.__proto__ || Object.getPrototypeOf(CreateAds)).call(this));
+
+    _this.state = {
+      name: 'Brandon'
+    };
+    return _this;
+  }
+
+  _createClass(CreateAds, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'h1',
+        null,
+        ' Create Ads Page '
+      );
+    }
+  }]);
+
+  return CreateAds;
+}(_react.Component);
+
+exports.default = CreateAds;
+
+/***/ }),
+
+/***/ 247:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(17);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Login = function (_Component) {
+  _inherits(Login, _Component);
+
+  function Login() {
+    _classCallCheck(this, Login);
+
+    var _this = _possibleConstructorReturn(this, (Login.__proto__ || Object.getPrototypeOf(Login)).call(this));
+
+    _this.state = {
+      name: 'Brandon'
+    };
+    return _this;
+  }
+
+  _createClass(Login, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'h1',
+        null,
+        ' Login Page '
+      );
+    }
+  }]);
+
+  return Login;
+}(_react.Component);
+
+exports.default = Login;
+
+/***/ }),
+
+/***/ 248:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(17);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Register = function (_Component) {
+  _inherits(Register, _Component);
+
+  function Register() {
+    _classCallCheck(this, Register);
+
+    var _this = _possibleConstructorReturn(this, (Register.__proto__ || Object.getPrototypeOf(Register)).call(this));
+
+    _this.state = {
+      name: 'Brandon'
+    };
+    return _this;
+  }
+
+  _createClass(Register, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'h1',
+        null,
+        ' Register Page '
+      );
+    }
+  }]);
+
+  return Register;
+}(_react.Component);
+
+exports.default = Register;
+
 /***/ })
 
-},[238]);
+},[244]);

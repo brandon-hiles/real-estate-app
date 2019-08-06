@@ -1,4 +1,9 @@
-import React, { Component} from 'react'
+import React, { Component} from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import About from './nav/about.js'
+import CreateAds from './nav/createAds.js'
+import Login from './nav/login.js'
+import Register from './nav/register.js'
 
 export default class Header extends Component {
   constructor () {

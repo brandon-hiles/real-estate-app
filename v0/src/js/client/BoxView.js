@@ -6,7 +6,7 @@ export default class BoxView extends Component {
     this.state = {
       name: "Brandon",
     }
-    this.fun = this.view.bind(this)
+    this.view = this.view.bind(this)
   }
 
   view() {
