@@ -7,7 +7,7 @@ const VENDOR_LIBS = [
 
 module.exports = {
   entry: {
-    app  : './src/js/client/app.js',
+    app  : './src/js/app.js',
     vendor: VENDOR_LIBS
   },
   output: { filename: '[name].js',
