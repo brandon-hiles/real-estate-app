@@ -1,0 +1,24 @@
+{
+  "name": "cedar-property-advisors",
+  "version": "1.0.0",
+  "description": "Cedar property advisors is a real-estate application that helps you find your perfect new home with a responsive easy-to-use application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandon-hiles/real-estate-app.git"
+  },
+  "keywords": [
+    "real-estate",
+    "react",
+    "sass"
+  ],
+  "author": "Brandon Hiles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandon-hiles/real-estate-app/issues"
+  },
+  "homepage": "https://github.com/brandon-hiles/real-estate-app#readme"
+}
