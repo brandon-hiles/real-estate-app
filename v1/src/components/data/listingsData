@@ -1,0 +1,759 @@
+Notes:
+1. Insert this data into a mongo database.
+2. Update homeType and find an image URL site.
+
+[
+    {
+        address: 838 Heather Dr.,
+        city: Wheeling,
+        state: WV,
+        rooms: 3,
+        price: 333020,
+        floorSpace: 11730,
+        extras: {
+            elecator: false,
+            gym: true,
+            finished_basement: true,
+            pool false:
+        },
+        homeType: <Add type>,
+        image: <Add URL>
+    },
+    {
+        address: 153 Canal Street,
+        city: Neptune,
+        state: CT,
+        rooms: 3,
+        price: 410707,
+        floorSpace: 11528,
+        extras: {
+            elecator: true,
+            gym: true,
+            finished_basement: true,
+            pool false:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address: 246 Hamilton Drive,
+        city: Dallas,
+        state: GA,
+        rooms: 2,
+        price: 322365,
+        floorSpace: 11169,
+        extras: {
+            elecator: true,
+            gym: false,
+            finished_basement: false,
+            pool: false
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address: 122 Brown Street,
+        city: Onalaska,
+        state: WI,
+        rooms: 5,
+        price: 689407,
+        floorSpace: 7754,
+        extras: {
+            elecator: true,
+            gym: true,
+            finished_basement: false,
+            pool: false
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address: 903 Clay Avenue,
+        city: Quakertown,
+        state: PA,
+        rooms: 2,
+        price: 201440,
+        floorSpace: 16322,
+        extras: {
+            elecator: false,
+            gym: false,
+            finished_basement: false,
+            pool true:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address: 7310 Trenton Rd.,
+        city: Plattsburgh,
+        state: NY,
+        rooms: 2,
+        price: 54230,
+        floorSpace: 3725,
+        extras: {
+            elecator: true,
+            gym: false,
+            finished_basement: false,
+            pool: false
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address: 82 New St.,
+        city: Littleton,
+        state: CO,
+        rooms: 4,
+        price: 393977,
+        floorSpace: 5870,
+        extras: {
+            elecator: true,
+            gym: true,
+            finished_basement: false,
+            pool: true
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address: 802 elm st.,
+        city: Clementon,
+        state: NJ,
+        rooms: 3,
+        price: 816238,
+        floorSpace: 17004,
+        extras: {
+            elecator: true,
+            gym: false,
+            finished_basement: false,
+            pool: false
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address: 3 Beach Court,
+        city: Liverpool,
+        state: NY,
+        rooms: 1,
+        price: 439828,
+        floorSpace: 16349,
+        extras: {
+            elecator: false,
+            gym: false,
+            finished_basement: true,
+            pool: false
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address: 38 Griffin St.,
+        city: Detroit,
+        state: MI,
+        rooms: 3,
+        price: 416736,
+        floorSpace: 11085,
+        extras: {
+            elecator: true,
+            gym: false,
+            finished_basement: false,
+            pool: true
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address: 9 Thorne Drive,
+        city: Middleburg,
+        state: FL,
+        rooms: 4,
+        price: 708904,
+        floorSpace: 12728,
+        extras: {
+            elecator: false,
+            gym: true,
+            finished_basement: false,
+            pool: true
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address: 332 Winchester Ave,
+        city: Antioch,
+        state: TN,
+        rooms: 3,
+        price: 675091,
+        floorSpace: 8361,
+        extras: {
+            elecator: false,
+            gym: true,
+            finished_basement: true,
+            pool: false
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address: 745 Rockville Ave.,
+        city: Avon,
+        state: IN,
+        rooms: 3,
+        price: 196761,
+        floorSpace: 2143,
+        extras: {
+            elecator: true,
+            gym: false,
+            finished_basement: false,
+            pool: false
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address: 941 Lancaster St.,
+        city: Lake Villa,
+        state: IL,
+        rooms: 5,
+        price: 740595,
+        floorSpace: 16487,
+        extras: {
+            elecator: false,
+            gym: false,
+            finished_basement: true,
+            pool: true
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+    {
+        address:,
+        city:,
+        state:,
+        rooms:,
+        price:,
+        floorSpace:,
+        extras: {
+            elecator:,
+            gym:,
+            finished_basement:,
+            pool:
+        },
+        homeType: <ADD TYPE>,
+        image: <ADD URL>
+    },
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+]
