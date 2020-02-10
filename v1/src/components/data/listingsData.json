@@ -519,788 +519,771 @@
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "488 Wild Rose St.",
+        "city": "Paducah",
+        "state": "KY",
+        "rooms": 5,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": true,
+            "gym": true,
+            "finished_basement": false,
+            "pool": false
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "744 Euclid St.",
+        "city": "Soddy Daisy",
+        "state": "TN",
+        "rooms": 5,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": true,
+            "gym": false,
+            "finished_basement": false,
+            "pool": true
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "417 Kent Ave.",
+        "city": "Chester",
+        "state": "PA",
+        "rooms": 2,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": false,
+            "gym": true,
+            "finished_basement": true,
+            "pool": true
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "50 Airport Ave.",
+        "city": "Salisbury",
+        "state": "MD",
+        "rooms": 5,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": true,
+            "gym": false,
+            "finished_basement": false,
+            "pool": false
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "22 Lantern St.",
+        "city": "Oklahoma City",
+        "state": "OK",
+        "rooms": 5,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": false,
+            "gym": false,
+            "finished_basement": false,
+            "pool": true
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "412 Broad St.",
+        "city": "Arlington",
+        "state": "MA",
+        "rooms": 1,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": false,
+            "gym": true,
+            "finished_basement": false,
+            "pool": false
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "625 Olive Ave.",
+        "city": "New Albany",
+        "state": "IN",
+        "rooms": 3,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": true,
+            "gym": true,
+            "finished_basement": false,
+            "pool": true
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "83 Brown Ave.",
+        "city": "Garner",
+        "state": "NC",
+        "rooms": 6,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": false,
+            "gym": true,
+            "finished_basement": false,
+            "pool": true
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "706 Wrangler St.",
+        "city": "Batavia",
+        "state": "OH",
+        "rooms": 4,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": false,
+            "gym": true,
+            "finished_basement": false,
+            "pool": false
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "41 Carpenter Dr.",
+        "city": "Ontario",
+        "state": "CA",
+        "rooms": 6,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": false,
+            "gym": false, 
+            "finished_basement": true,
+            "pool": true
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "895 Bridle Dr.",
+        "city": "Dawnsonville",
+        "state": "GA",
+        "rooms": 3,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": false,
+            "gym": false,
+            "finished_basement": false,
+            "pool": false
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "994 West St.",
+        "city": "Henrico",
+        "state": "VA",
+        "rooms": 4,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": true,
+            "gym": true,
+            "finished_basement": true,
+            "pool": false
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "620 Park Ave.",
+        "city": "Glenside",
+        "state": "PA",
+        "rooms": 5,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": false,
+            "gym": true,
+            "finished_basement": false,
+            "pool": true
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "319 Union St.",
+        "city": "Kennesaw",
+        "state": "GA",
+        "rooms": 1,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": false,
+            "gym": true,
+            "finished_basement": true,
+            "pool": true
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "60 Ashley Ave.",
+        "city": "Green Bay",
+        "state": "WI",
+        "rooms": 5,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": false,
+            "gym": true,
+            "finished_basement": true,
+            "pool": true
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "356 Redwood Dr.",
+        "city": "Norwalk",
+        "state": "CT",
+        "rooms": 6,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": true,
+            "gym": true,
+            "finished_basement": false,
+            "pool": true
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "473 Young St.",
+        "city": "Annandale",
+        "state": "VA",
+        "rooms": 3,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": true,
+            "gym": false,
+            "finished_basement": false,
+            "pool": false
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "9 Windsor Court",
+        "city": "Niceville",
+        "state": "FL",
+        "rooms": 4,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": false,
+            "gym": true,
+            "finished_basement": true,
+            "pool": true
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "77 Longbranch Court",
+        "city": "Spring Hill",
+        "state": "FL",
+        "rooms": 6,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": true,
+            "gym": true,
+            "finished_basement": true,
+            "pool": false
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "18 Arch Dr.",
+        "city": "Palm Bay",
+        "state": "FL",
+        "rooms": 4,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": false,
+            "gym": true,
+            "finished_basement": false,
+            "pool": false
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "37 Manor Circle",
+        "city": "South Portland",
+        "state": "ME",
+        "rooms": 3,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": true,
+            "gym": false,
+            "finished_basement": false,
+            "pool": false
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "24 Rockaway Ave.",
+        "city": "Sewell",
+        "state": "NJ",
+        "rooms": 6,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": true,
+            "gym": true,
+            "finished_basement": false,
+            "pool": true
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "8 SE. Union",
+        "city": "Cantoment",
+        "state": "FL",
+        "rooms": 5,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": false,
+            "gym": true,
+            "finished_basement": true,
+            "pool": false
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "55 Gulf Dr.",
+        "city": "Lumberton",
+        "state": "NC",
+        "rooms": 4,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": false,
+            "gym": false,
+            "finished_basement": true,
+            "pool": false
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
-        "price":,
+        "address": "187 Peral Rd.",
+        "city": "Frederick",
+        "state": "MD",
+        "rooms": 1,
+        "price": ,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": false,
+            "gym": false,
+            "finished_basement": true,
+            "pool": true
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "13 Victoria Lane",
+        "city": "Hallandale",
+        "state": "FL",
+        "rooms": 1,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": true,
+            "gym": false,
+            "finished_basement": true,
+            "pool": false
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "55 Snake Hill",
+        "city": "Newton",
+        "state": "PA",
+        "rooms": 5,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": true,
+            "gym": false,
+            "finished_basement": true,
+            "pool": true
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "122 Richardson St.",
+        "city": "Metairie",
+        "state": "LA",
+        "rooms": 1,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": true,
+            "gym": false,
+            "finished_basement": true,
+            "pool": true
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "3 Maiden Ave.",
+        "city": "Champlin",
+        "state": "MN",
+        "rooms": 1,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": true,
+            "gym": false,
+            "finished_basement": false,
+            "pool": false
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "77 Selby St.",
+        "city": "Grove City",
+        "state": "OH",
+        "rooms": 2,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": true, 
+            "gym": true,
+            "finished_basement": false,
+            "pool": false
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "85 Lake Court",
+        "city": "Osseo",
+        "state": "MN",
+        "rooms": 5,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": false,
+            "gym": true,
+            "finished_basement": false,
+            "pool": true
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "69 School Ave.",
+        "city": "Beltsville",
+        "state": "MD",
+        "rooms": 6,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": true,
+            "gym": true,
+            "finished_basement": false,
+            "pool": false
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "304 Arch Ave.",
+        "city": "Chattanooga",
+        "state": "TN",
+        "rooms": 3,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": true,
+            "gym": false,
+            "finished_basement": false,
+            "pool": true
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "906 Talbot Ave.",
+        "city": "Burnsville",
+        "state": "MN",
+        "rooms": 5,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": true,
+            "gym": true,
+            "finished_basement": false,
+            "pool": false
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "498 South Rd.",
+        "city": "Asheville",
+        "state": "NC",
+        "rooms": 5,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": false,
+            "gym": false,
+            "finished_basement": true,
+            "pool": false 
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "3 Harrison Dr.",
+        "city": "Hartselle",
+        "state": "AL",
+        "rooms": 1,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": true,
+            "gym": true,
+            "finished_basement": true,
+            "pool": false
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "16 Glenwood St.",
+        "city": "Morganton",
+        "state": "NC",
+        "rooms": 5,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": true,
+            "gym": true,
+            "finished_basement": false,
+            "pool": false
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "28 Beechwood St.",
+        "city": "San Carlos",
+        "state": "CA",
+        "rooms": 5,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": false,
+            "gym": true,
+            "finished_basement": true,
+            "pool": true
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "812 Morris Rd.",
+        "city": "Park Forest",
+        "state": "IL",
+        "rooms": 1,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": false,
+            "gym": false,
+            "finished_basement": false,
+            "pool": false
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "142 Walnut St.",
+        "city": "Mcminniville",
+        "state": "TN",
+        "rooms": 3,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": false,
+            "gym": true,
+            "finished_basement": false,
+            "pool": false
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "34 East Valley Farms Ave.",
+        "city": "Oak Forest",
+        "state": "IL",
+        "rooms": 4,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": true,
+            "gym": true,
+            "finished_basement": false,
+            "pool": true
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "962 Branch St.",
+        "city": "Marshalltown",
+        "state": "IA",
+        "rooms": 6,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": true,
+            "gym": true,
+            "finished_basement": false,
+            "pool": false
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "699 Thompson Dr.",
+        "city": "Racine",
+        "state": "WI",
+        "rooms": 2,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": true,
+            "gym": true,
+            "finished_basement": false,
+            "pool": false
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "526 W. Park St.",
+        "city": "Rahway",
+        "state": "NJ",
+        "rooms": 6,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": false,
+            "gym": true,
+            "finished_basement": false,
+            "pool": false
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "51 High Noon Drive",
+        "city": "Casselberry",
+        "state": "FL",
+        "rooms": 5,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": false,
+            "gym": false,
+            "finished_basement": true,
+            "pool": false
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "175 Longfellow Dr.",
+        "city": "Miami Beach",
+        "state": "FL",
+        "rooms": 6,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": true,
+            "gym": true,
+            "finished_basement": true,
+            "pool": true
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "819 Leeton Ride St.",
+        "city": "Endicott",
+        "state": "NY",
+        "rooms": 3,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": false,
+            "gym": false,
+            "finished_basement": true,
+            "pool": true
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
     },
     {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
+        "address": "11 Plumb Branch St.",
+        "city": "Norcross",
+        "state": "GA",
+        "rooms": 5,
         "price":,
         "floorSpace":,
         "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
+            "elecator": true,
+            "gym": true,
+            "finished_basement": false,
+            "pool": false
         },
         "homeType": "<ADD TYPE>",
         "image": "<ADD URL>"
-    },
-    {
-        "address": ,
-        "city":,
-        "state":,
-        "rooms":,
-        "price":,
-        "floorSpace":,
-        "extras": {
-            "elecator":,
-            "gym":,
-            "finished_basement":,
-            "pool":
-        },
-        "homeType": "<ADD TYPE>",
-        "image": "<ADD URL>"
-    },
-        
+    }  
 ]
