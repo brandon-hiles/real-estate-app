@@ -1,9 +1,3 @@
-//Notes:
-//1. Insert this data into a mongo database.
-//2. Update homeType and find an image URL site.
-// 3. Change eleecator to elevator
-// 4. Add all images found on the internet to an S3 bucket.
-
 [
     {
         "address": "838 Heather Dr.",
@@ -18,7 +12,7 @@
             "finished_basement": true,
             "pool": false
         },
-        "homeType": "<Add type>",
+        "homeType": "Studio",
         "image": "<Add URL>"
     },
     {
@@ -34,7 +28,7 @@
             "finished_basement": true,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Studio",
         "image": "<ADD URL>"
     },
     {
@@ -50,7 +44,7 @@
             "finished_basement": false,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Studio",
         "image": "<ADD URL>"
     },
     {
@@ -66,7 +60,7 @@
             "finished_basement": false,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Cottage",
         "image": "<ADD URL>"
     },
     {
@@ -83,7 +77,7 @@
             "finished_basement": false,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Studio",
         "image": "<ADD URL>"
     },
     {
@@ -99,7 +93,7 @@
             "finished_basement": false,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Studio",
         "image": "<ADD URL>"
     },
     {
@@ -115,7 +109,7 @@
             "finished_basement": false,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Apartment",
         "image": "<ADD URL>"
     },
     {
@@ -131,7 +125,7 @@
             "finished_basement": false,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Apartment",
         "image": "<ADD URL>"
     },
     {
@@ -147,7 +141,7 @@
             "finished_basement": true,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Studio",
         "image": "<ADD URL>"
     },
     {
@@ -163,7 +157,7 @@
             "finished_basement": false,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Cottage",
         "image": "<ADD URL>"
     },
     {
@@ -179,7 +173,7 @@
             "finished_basement": false,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Studio",
         "image": "<ADD URL>"
     },
     {
@@ -195,7 +189,7 @@
             "finished_basement": true,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Ranch",
         "image": "<ADD URL>"
     },
     {
@@ -211,7 +205,7 @@
             "finished_basement": false,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Ranch",
         "image": "<ADD URL>"
     },
     {
@@ -227,7 +221,7 @@
             "finished_basement": true,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Apartment",
         "image": "<ADD URL>"
     },
     {
@@ -243,7 +237,7 @@
             "finished_basement": false,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Ranch",
         "image": "<ADD URL>"
     },
     {
@@ -259,7 +253,7 @@
             "finished_basement": true,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Studio",
         "image": "<ADD URL>"
     },
     {
@@ -275,7 +269,7 @@
             "finished_basement": false,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Cottage",
         "image": "<ADD URL>"
     },
     {
@@ -291,7 +285,7 @@
             "finished_basement": true,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Apartment",
         "image": "<ADD URL>"
     },
     {
@@ -307,7 +301,7 @@
             "finished_basement": true,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Ranch",
         "image": "<ADD URL>"
     },
     {
@@ -323,7 +317,7 @@
             "finished_basement": true,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Studio",
         "image": "<ADD URL>"
     },
     {
@@ -339,7 +333,7 @@
             "finished_basement": true,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Cottage",
         "image": "<ADD URL>"
     },
     {
@@ -355,7 +349,7 @@
             "finished_basement": false,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Cottage",
         "image": "<ADD URL>"
     },
     {
@@ -371,7 +365,7 @@
             "finished_basement": false,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Studio",
         "image": "<ADD URL>"
     },
     {
@@ -387,7 +381,7 @@
             "finished_basement": true,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Ranch",
         "image": "<ADD URL>"
     },
     {
@@ -403,7 +397,7 @@
             "finished_basement": true,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Cottage",
         "image": "<ADD URL>"
     },
     {
@@ -419,7 +413,7 @@
             "finished_basement": true,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Apartment",
         "image": "<ADD URL>"
     },
     {
@@ -435,7 +429,7 @@
             "finished_basement": false,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Ranch",
         "image": "<ADD URL>"
     },
     {
@@ -451,7 +445,7 @@
             "finished_basement": false,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Apartment",
         "image": "<ADD URL>"
     },
     {
@@ -467,7 +461,7 @@
             "finished_basement": false,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Studio",
         "image": "<ADD URL>"
     },
     {
@@ -483,7 +477,7 @@
             "finished_basement": false,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Apartment",
         "image": "<ADD URL>"
     },
     {
@@ -499,7 +493,7 @@
             "finished_basement": false,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Cottage",
         "image": "<ADD URL>"
     },
     {
@@ -515,7 +509,7 @@
             "finished_basement": true,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Cottage",
         "image": "<ADD URL>"
     },
     {
@@ -523,15 +517,15 @@
         "city": "Paducah",
         "state": "KY",
         "rooms": 5,
-        "price":,
-        "floorSpace":,
+        "price": 204808,
+        "floorSpace": 2669,
         "extras": {
             "elecator": true,
             "gym": true,
             "finished_basement": false,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Cottage",
         "image": "<ADD URL>"
     },
     {
@@ -539,15 +533,15 @@
         "city": "Soddy Daisy",
         "state": "TN",
         "rooms": 5,
-        "price":,
-        "floorSpace":,
+        "price": 669067,
+        "floorSpace": 19039,
         "extras": {
             "elecator": true,
             "gym": false,
             "finished_basement": false,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Apartment",
         "image": "<ADD URL>"
     },
     {
@@ -555,15 +549,15 @@
         "city": "Chester",
         "state": "PA",
         "rooms": 2,
-        "price":,
-        "floorSpace":,
+        "price": 571956,
+        "floorSpace": 11950,
         "extras": {
             "elecator": false,
             "gym": true,
             "finished_basement": true,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Studio",
         "image": "<ADD URL>"
     },
     {
@@ -571,15 +565,15 @@
         "city": "Salisbury",
         "state": "MD",
         "rooms": 5,
-        "price":,
-        "floorSpace":,
+        "price": 679993,
+        "floorSpace": 11980,
         "extras": {
             "elecator": true,
             "gym": false,
             "finished_basement": false,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Apartment",
         "image": "<ADD URL>"
     },
     {
@@ -587,15 +581,15 @@
         "city": "Oklahoma City",
         "state": "OK",
         "rooms": 5,
-        "price":,
-        "floorSpace":,
+        "price": 205860,
+        "floorSpace": 10791,
         "extras": {
             "elecator": false,
             "gym": false,
             "finished_basement": false,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Studio",
         "image": "<ADD URL>"
     },
     {
@@ -603,15 +597,15 @@
         "city": "Arlington",
         "state": "MA",
         "rooms": 1,
-        "price":,
-        "floorSpace":,
+        "price": 812515,
+        "floorSpace": 3839,
         "extras": {
             "elecator": false,
             "gym": true,
             "finished_basement": false,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Cottage",
         "image": "<ADD URL>"
     },
     {
@@ -619,15 +613,15 @@
         "city": "New Albany",
         "state": "IN",
         "rooms": 3,
-        "price":,
-        "floorSpace":,
+        "price": 57505,
+        "floorSpace": 1942,
         "extras": {
             "elecator": true,
             "gym": true,
             "finished_basement": false,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Ranch",
         "image": "<ADD URL>"
     },
     {
@@ -635,15 +629,15 @@
         "city": "Garner",
         "state": "NC",
         "rooms": 6,
-        "price":,
-        "floorSpace":,
+        "price": 439870,
+        "floorSpace": 5472,
         "extras": {
             "elecator": false,
             "gym": true,
             "finished_basement": false,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Cottage",
         "image": "<ADD URL>"
     },
     {
@@ -651,15 +645,15 @@
         "city": "Batavia",
         "state": "OH",
         "rooms": 4,
-        "price":,
-        "floorSpace":,
+        "price": 377024,
+        "floorSpace": 14042,
         "extras": {
             "elecator": false,
             "gym": true,
             "finished_basement": false,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Apartment",
         "image": "<ADD URL>"
     },
     {
@@ -667,15 +661,15 @@
         "city": "Ontario",
         "state": "CA",
         "rooms": 6,
-        "price":,
-        "floorSpace":,
+        "price": 154677,
+        "floorSpace": 17202,
         "extras": {
             "elecator": false,
             "gym": false, 
             "finished_basement": true,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Cottage",
         "image": "<ADD URL>"
     },
     {
@@ -683,15 +677,15 @@
         "city": "Dawnsonville",
         "state": "GA",
         "rooms": 3,
-        "price":,
-        "floorSpace":,
+        "price": 369660,
+        "floorSpace": 5350,
         "extras": {
             "elecator": false,
             "gym": false,
             "finished_basement": false,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Ranch",
         "image": "<ADD URL>"
     },
     {
@@ -699,15 +693,15 @@
         "city": "Henrico",
         "state": "VA",
         "rooms": 4,
-        "price":,
-        "floorSpace":,
+        "price": 745143,
+        "floorSpace": 11626,
         "extras": {
             "elecator": true,
             "gym": true,
             "finished_basement": true,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Studio",
         "image": "<ADD URL>"
     },
     {
@@ -715,15 +709,15 @@
         "city": "Glenside",
         "state": "PA",
         "rooms": 5,
-        "price":,
-        "floorSpace":,
+        "price": 306400,
+        "floorSpace": 3271,
         "extras": {
             "elecator": false,
             "gym": true,
             "finished_basement": false,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Studio",
         "image": "<ADD URL>"
     },
     {
@@ -731,15 +725,15 @@
         "city": "Kennesaw",
         "state": "GA",
         "rooms": 1,
-        "price":,
-        "floorSpace":,
+        "price": 911081,
+        "floorSpace": 4426,
         "extras": {
             "elecator": false,
             "gym": true,
             "finished_basement": true,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Ranch",
         "image": "<ADD URL>"
     },
     {
@@ -747,15 +741,15 @@
         "city": "Green Bay",
         "state": "WI",
         "rooms": 5,
-        "price":,
-        "floorSpace":,
+        "price": 560178,
+        "floorSpace": 5424,
         "extras": {
             "elecator": false,
             "gym": true,
             "finished_basement": true,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Apartment",
         "image": "<ADD URL>"
     },
     {
@@ -763,15 +757,15 @@
         "city": "Norwalk",
         "state": "CT",
         "rooms": 6,
-        "price":,
-        "floorSpace":,
+        "price": 508350,
+        "floorSpace": 18260,
         "extras": {
             "elecator": true,
             "gym": true,
             "finished_basement": false,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Studio",
         "image": "<ADD URL>"
     },
     {
@@ -779,15 +773,15 @@
         "city": "Annandale",
         "state": "VA",
         "rooms": 3,
-        "price":,
-        "floorSpace":,
+        "price": 426007,
+        "floorSpace": 9263,
         "extras": {
             "elecator": true,
             "gym": false,
             "finished_basement": false,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Cottage",
         "image": "<ADD URL>"
     },
     {
@@ -795,15 +789,15 @@
         "city": "Niceville",
         "state": "FL",
         "rooms": 4,
-        "price":,
-        "floorSpace":,
+        "price": 966414,
+        "floorSpace": 11180,
         "extras": {
             "elecator": false,
             "gym": true,
             "finished_basement": true,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Cottage",
         "image": "<ADD URL>"
     },
     {
@@ -811,15 +805,15 @@
         "city": "Spring Hill",
         "state": "FL",
         "rooms": 6,
-        "price":,
-        "floorSpace":,
+        "price": 214515,
+        "floorSpace": 9391,
         "extras": {
             "elecator": true,
             "gym": true,
             "finished_basement": true,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Apartment",
         "image": "<ADD URL>"
     },
     {
@@ -827,15 +821,15 @@
         "city": "Palm Bay",
         "state": "FL",
         "rooms": 4,
-        "price":,
-        "floorSpace":,
+        "price": 223393,
+        "floorSpace": 17475,
         "extras": {
             "elecator": false,
             "gym": true,
             "finished_basement": false,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Apartment",
         "image": "<ADD URL>"
     },
     {
@@ -843,15 +837,15 @@
         "city": "South Portland",
         "state": "ME",
         "rooms": 3,
-        "price":,
-        "floorSpace":,
+        "price": 955490,
+        "floorSpace": 15167,
         "extras": {
             "elecator": true,
             "gym": false,
             "finished_basement": false,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Ranch",
         "image": "<ADD URL>"
     },
     {
@@ -859,15 +853,15 @@
         "city": "Sewell",
         "state": "NJ",
         "rooms": 6,
-        "price":,
-        "floorSpace":,
+        "price": 697144,
+        "floorSpace": 11106,
         "extras": {
             "elecator": true,
             "gym": true,
             "finished_basement": false,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Cottage",
         "image": "<ADD URL>"
     },
     {
@@ -875,15 +869,15 @@
         "city": "Cantoment",
         "state": "FL",
         "rooms": 5,
-        "price":,
-        "floorSpace":,
+        "price": 893467,
+        "floorSpace": 2152,
         "extras": {
             "elecator": false,
             "gym": true,
             "finished_basement": true,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Apartment",
         "image": "<ADD URL>"
     },
     {
@@ -891,15 +885,15 @@
         "city": "Lumberton",
         "state": "NC",
         "rooms": 4,
-        "price":,
-        "floorSpace":,
+        "price": 675333,
+        "floorSpace": 2549,
         "extras": {
             "elecator": false,
             "gym": false,
             "finished_basement": true,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Studio",
         "image": "<ADD URL>"
     },
     {
@@ -907,15 +901,15 @@
         "city": "Frederick",
         "state": "MD",
         "rooms": 1,
-        "price": ,
-        "floorSpace":,
+        "price": 783449,
+        "floorSpace": 12454,
         "extras": {
             "elecator": false,
             "gym": false,
             "finished_basement": true,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Apartment",
         "image": "<ADD URL>"
     },
     {
@@ -923,15 +917,15 @@
         "city": "Hallandale",
         "state": "FL",
         "rooms": 1,
-        "price":,
-        "floorSpace":,
+        "price": 688584,
+        "floorSpace": 19534,
         "extras": {
             "elecator": true,
             "gym": false,
             "finished_basement": true,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Studio",
         "image": "<ADD URL>"
     },
     {
@@ -939,15 +933,15 @@
         "city": "Newton",
         "state": "PA",
         "rooms": 5,
-        "price":,
-        "floorSpace":,
+        "price": 292965,
+        "floorSpace": 19137,
         "extras": {
             "elecator": true,
             "gym": false,
             "finished_basement": true,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Studio",
         "image": "<ADD URL>"
     },
     {
@@ -955,15 +949,15 @@
         "city": "Metairie",
         "state": "LA",
         "rooms": 1,
-        "price":,
-        "floorSpace":,
+        "price": 899244,
+        "floorSpace": 13314,
         "extras": {
             "elecator": true,
             "gym": false,
             "finished_basement": true,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Apartment",
         "image": "<ADD URL>"
     },
     {
@@ -971,15 +965,15 @@
         "city": "Champlin",
         "state": "MN",
         "rooms": 1,
-        "price":,
-        "floorSpace":,
+        "price": 265481,
+        "floorSpace": 6340,
         "extras": {
             "elecator": true,
             "gym": false,
             "finished_basement": false,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Ranch",
         "image": "<ADD URL>"
     },
     {
@@ -987,15 +981,15 @@
         "city": "Grove City",
         "state": "OH",
         "rooms": 2,
-        "price":,
-        "floorSpace":,
+        "price": 665462,
+        "floorSpace": 12256,
         "extras": {
             "elecator": true, 
             "gym": true,
             "finished_basement": false,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Apartment",
         "image": "<ADD URL>"
     },
     {
@@ -1003,15 +997,15 @@
         "city": "Osseo",
         "state": "MN",
         "rooms": 5,
-        "price":,
-        "floorSpace":,
+        "price": 341957,
+        "floorSpace": 3042,
         "extras": {
             "elecator": false,
             "gym": true,
             "finished_basement": false,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Cottage",
         "image": "<ADD URL>"
     },
     {
@@ -1019,15 +1013,15 @@
         "city": "Beltsville",
         "state": "MD",
         "rooms": 6,
-        "price":,
-        "floorSpace":,
+        "price": 587806,
+        "floorSpace": 13712,
         "extras": {
             "elecator": true,
             "gym": true,
             "finished_basement": false,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Ranch",
         "image": "<ADD URL>"
     },
     {
@@ -1035,15 +1029,15 @@
         "city": "Chattanooga",
         "state": "TN",
         "rooms": 3,
-        "price":,
-        "floorSpace":,
+        "price": 155857,
+        "floorSpace": 13343,
         "extras": {
             "elecator": true,
             "gym": false,
             "finished_basement": false,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Apartment",
         "image": "<ADD URL>"
     },
     {
@@ -1051,15 +1045,15 @@
         "city": "Burnsville",
         "state": "MN",
         "rooms": 5,
-        "price":,
-        "floorSpace":,
+        "price": 391238,
+        "floorSpace": 9204,
         "extras": {
             "elecator": true,
             "gym": true,
             "finished_basement": false,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Cottage",
         "image": "<ADD URL>"
     },
     {
@@ -1067,15 +1061,15 @@
         "city": "Asheville",
         "state": "NC",
         "rooms": 5,
-        "price":,
-        "floorSpace":,
+        "price": 504101,
+        "floorSpace": 8522,
         "extras": {
             "elecator": false,
             "gym": false,
             "finished_basement": true,
             "pool": false 
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Apartment",
         "image": "<ADD URL>"
     },
     {
@@ -1083,15 +1077,15 @@
         "city": "Hartselle",
         "state": "AL",
         "rooms": 1,
-        "price":,
-        "floorSpace":,
+        "price": 198613,
+        "floorSpace": 19359,
         "extras": {
             "elecator": true,
             "gym": true,
             "finished_basement": true,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Ranch",
         "image": "<ADD URL>"
     },
     {
@@ -1099,15 +1093,15 @@
         "city": "Morganton",
         "state": "NC",
         "rooms": 5,
-        "price":,
-        "floorSpace":,
+        "price": 749782,
+        "floorSpace": 14081, 
         "extras": {
             "elecator": true,
             "gym": true,
             "finished_basement": false,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Cottage",
         "image": "<ADD URL>"
     },
     {
@@ -1115,15 +1109,15 @@
         "city": "San Carlos",
         "state": "CA",
         "rooms": 5,
-        "price":,
-        "floorSpace":,
+        "price": 988807,
+        "floorSpace": 2876,
         "extras": {
             "elecator": false,
             "gym": true,
             "finished_basement": true,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Ranch",
         "image": "<ADD URL>"
     },
     {
@@ -1131,15 +1125,15 @@
         "city": "Park Forest",
         "state": "IL",
         "rooms": 1,
-        "price":,
-        "floorSpace":,
+        "price": 172041,
+        "floorSpace": 12210,
         "extras": {
             "elecator": false,
             "gym": false,
             "finished_basement": false,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Ranch",
         "image": "<ADD URL>"
     },
     {
@@ -1147,15 +1141,15 @@
         "city": "Mcminniville",
         "state": "TN",
         "rooms": 3,
-        "price":,
-        "floorSpace":,
+        "price": 352815,
+        "floorSpace": 8259,
         "extras": {
             "elecator": false,
             "gym": true,
             "finished_basement": false,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Ranch",
         "image": "<ADD URL>"
     },
     {
@@ -1163,15 +1157,15 @@
         "city": "Oak Forest",
         "state": "IL",
         "rooms": 4,
-        "price":,
-        "floorSpace":,
+        "price": 516290,
+        "floorSpace": 13598,
         "extras": {
             "elecator": true,
             "gym": true,
             "finished_basement": false,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Ranch",
         "image": "<ADD URL>"
     },
     {
@@ -1179,15 +1173,15 @@
         "city": "Marshalltown",
         "state": "IA",
         "rooms": 6,
-        "price":,
-        "floorSpace":,
+        "price": 922392,
+        "floorSpace": 14355,
         "extras": {
             "elecator": true,
             "gym": true,
             "finished_basement": false,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Studio",
         "image": "<ADD URL>"
     },
     {
@@ -1195,15 +1189,15 @@
         "city": "Racine",
         "state": "WI",
         "rooms": 2,
-        "price":,
-        "floorSpace":,
+        "price": 610039,
+        "floorSpace": 13236,
         "extras": {
             "elecator": true,
             "gym": true,
             "finished_basement": false,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Apartment",
         "image": "<ADD URL>"
     },
     {
@@ -1211,15 +1205,15 @@
         "city": "Rahway",
         "state": "NJ",
         "rooms": 6,
-        "price":,
-        "floorSpace":,
+        "price": 789815,
+        "floorSpace": 11673,
         "extras": {
             "elecator": false,
             "gym": true,
             "finished_basement": false,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Apartment",
         "image": "<ADD URL>"
     },
     {
@@ -1227,15 +1221,15 @@
         "city": "Casselberry",
         "state": "FL",
         "rooms": 5,
-        "price":,
-        "floorSpace":,
+        "price": 194287,
+        "floorSpace": 16244,
         "extras": {
             "elecator": false,
             "gym": false,
             "finished_basement": true,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Ranch",
         "image": "<ADD URL>"
     },
     {
@@ -1243,15 +1237,15 @@
         "city": "Miami Beach",
         "state": "FL",
         "rooms": 6,
-        "price":,
-        "floorSpace":,
+        "price": 831855,
+        "floorSpace": 9991,
         "extras": {
             "elecator": true,
             "gym": true,
             "finished_basement": true,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Cottage",
         "image": "<ADD URL>"
     },
     {
@@ -1259,15 +1253,15 @@
         "city": "Endicott",
         "state": "NY",
         "rooms": 3,
-        "price":,
-        "floorSpace":,
+        "price": 220375,
+        "floorSpace": 15037,
         "extras": {
             "elecator": false,
             "gym": false,
             "finished_basement": true,
             "pool": true
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Cottage",
         "image": "<ADD URL>"
     },
     {
@@ -1275,15 +1269,15 @@
         "city": "Norcross",
         "state": "GA",
         "rooms": 5,
-        "price":,
-        "floorSpace":,
+        "price": 216160,
+        "floorSpace": 13627,
         "extras": {
             "elecator": true,
             "gym": true,
             "finished_basement": false,
             "pool": false
         },
-        "homeType": "<ADD TYPE>",
+        "homeType": "Ranch",
         "image": "<ADD URL>"
     }  
 ]
