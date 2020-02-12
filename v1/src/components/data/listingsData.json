@@ -13,7 +13,7 @@
             "pool": false
         },
         "homeType": "Studio",
-        "image": "<Add URL>"
+        "image": "https://cedar-property-advisors.s3.ca-central-1.amazonaws.com/img_1.jpg"
     },
     {
         "address": "153 Canal Street",
@@ -29,7 +29,7 @@
             "pool": false
         },
         "homeType": "Studio",
-        "image": "<ADD URL>"
+        "image": "https://cedar-property-advisors.s3.ca-central-1.amazonaws.com/img_2.jpg"
     },
     {
         "address": "246 Hamilton Drive",
@@ -45,7 +45,7 @@
             "pool": false
         },
         "homeType": "Studio",
-        "image": "<ADD URL>"
+        "image": "https://cedar-property-advisors.s3.ca-central-1.amazonaws.com/img_3.jpg"
     },
     {
         "address": "122 Brown Street",
@@ -61,7 +61,7 @@
             "pool": false
         },
         "homeType": "Cottage",
-        "image": "<ADD URL>"
+        "image": "https://cedar-property-advisors.s3.ca-central-1.amazonaws.com/img_4.jpg"
     },
     {
         
@@ -78,7 +78,7 @@
             "pool": true
         },
         "homeType": "Studio",
-        "image": "<ADD URL>"
+        "image": "https://cedar-property-advisors.s3.ca-central-1.amazonaws.com/img_5.jpg"
     },
     {
         "address": "7310 Trenton Rd.",
@@ -94,7 +94,7 @@
             "pool": false
         },
         "homeType": "Studio",
-        "image": "<ADD URL>"
+        "image": "https://cedar-property-advisors.s3.ca-central-1.amazonaws.com/img_6.jpg"
     },
     {
         "address": "82 New St.",
@@ -110,7 +110,7 @@
             "pool": true
         },
         "homeType": "Apartment",
-        "image": "<ADD URL>"
+        "image": "https://cedar-property-advisors.s3.ca-central-1.amazonaws.com/img_7.jpg"
     },
     {
         "address": "802 elm st.",
@@ -126,7 +126,7 @@
             "pool": false
         },
         "homeType": "Apartment",
-        "image": "<ADD URL>"
+        "image": "https://cedar-property-advisors.s3.ca-central-1.amazonaws.com/img_8.jpg"
     },
     {
         "address": "3 Beach Court",
@@ -142,7 +142,7 @@
             "pool": false
         },
         "homeType": "Studio",
-        "image": "<ADD URL>"
+        "image": "https://cedar-property-advisors.s3.ca-central-1.amazonaws.com/img_9.jpg"
     },
     {
         "address": "38 Griffin St.",

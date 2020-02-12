@@ -1,3 +1,10 @@
+//Notes:
+//1. Insert this data into a mongo database.
+//2. Update homeType and find an image URL site.
+// 3. Change eleecator to elevator
+// 4. Add all images found on the internet to an S3 bucket.
+
+
 Structure (Address || City || State)
 
 Address Generator Reference: https://www.randomlists.com/random-addresses
