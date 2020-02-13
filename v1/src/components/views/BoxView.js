@@ -3,9 +3,6 @@ import React, { Component } from 'react'
 export default class BoxView extends Component {
   constructor() {
     super()
-    this.state = {
-      name: "Brandon",
-    }
     this.view = this.view.bind(this)
   }
 
