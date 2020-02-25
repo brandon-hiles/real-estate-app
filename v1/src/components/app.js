@@ -178,10 +178,6 @@ export default class App extends React.Component {
     render() {
         return(
             <div>
-              <Router>
-                {/* Small Routing Issues */ }
-                <Route path="/get-started" component={() => <GetStarted/>} />
-              </Router>
                 <Header />
                 <section id="content-area">
                     <Filter change={this.change} globalState={this.state} populateAction={this.populateForms} />
