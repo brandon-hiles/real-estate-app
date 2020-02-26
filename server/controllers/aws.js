@@ -11,34 +11,24 @@ AWS.config.update({
 // Initate DynamoDB instance
 var docClient = new AWS.DynamoDB.DocumentClient();
 
-const grabData = () => {
+const grabData = async (tableName) => {
     /*
         grabData: Grab all data from Database
     */
-   var item = []
 
     let params = {
-        TableName: 'Listings'
+        TableName: tableName,
     }
-    docClient.scan(params, (err, data) => {
-        if (err) {
-            console.error("Unable to scan the table. Error JSON:", JSON.stringify(err, null, 2));
-        } else {        
-            console.log("Scan succeeded.");
-            data.Items.forEach((itemdata) => {
-                item.push(itemdata)
-                console.log("Item :", ++count,JSON.stringify(itemdata));
-            });
-    
-            // continue scanning if we have more items
-            if (typeof data.LastEvaluatedKey != "undefined") {
-                console.log("Scanning for more...");
-                params.ExclusiveStartKey = data.LastEvaluatedKey;
-                docClient.scan(params, onScan);
-            }
-        }
-    });
-    var count = 0;    
+
+    let scanResults = [];
+    let items;
+    do{
+        items =  await docClient.scan(params).promise();
+        items.Items.forEach((item) => scanResults.push(item));
+        params.ExclusiveStartKey  = items.LastEvaluatedKey;
+    }while(typeof items.LastEvaluatedKey != "undefined");
+
+    return scanResults;
 }
 
 const upload = (fname) => {
@@ -79,7 +69,6 @@ const upload = (fname) => {
         });
     });
 }
-
 
 // Define our exports
 exports.upload = upload;
