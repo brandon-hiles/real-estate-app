@@ -1,6 +1,5 @@
 // Load up Libraries
 const AWS = require('aws-sdk');
-const dotenv = require('dotenv')
 var fs = require('fs');
 
 
@@ -30,6 +29,7 @@ const grabData = async (tableName) => {
 
     return scanResults;
 }
+
 
 const upload = (fname) => {
     /*

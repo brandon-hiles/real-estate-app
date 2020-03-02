@@ -11,8 +11,7 @@ app.get('/', (req, res) => res.send('Hello World!'))
 app.get('/upload', (req, res) => res.send(aws.upload('./controllers/data/listingsData.json')))
 app.get('/data', (req, res) => {
     let data = aws.grabData('Listings')
-    let results = data.then(result => JSON.stringify(result))
-    res.send(results)
+    data.then(result => res.send(result))
 })
 
 app.listen(port, () => console.log("Server has started"))
