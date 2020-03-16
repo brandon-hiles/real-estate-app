@@ -13,6 +13,8 @@ import listingsData from './data/listingsData.js'
 // Utils
 import getUniqueElements from './utils/uniqueElements'
 
+const axios = require('axios');
+
 export default class App extends React.Component {
     constructor(props) {
         super(props)
@@ -47,6 +49,18 @@ export default class App extends React.Component {
        // this.checkBoxFilters = this.checkBoxFilters.bind(this)
       }
     
+      componentDidMount() {
+       const NUMBER = '1'; // Number of files we want to test
+       const URI = 'https://stupefied-mccarthy-ecaf46.netlify.com/.netlify/functions/api/data'; 
+       const URL = URI + NUMBER;
+
+       axios.get(URL).then(res => {
+          setState({
+            listingsData
+          })
+        })
+      }
+
       componentWillMount() {
         var listingsData = this.state.listingsData.sort((a,b) => {
           return a.price - b.price
