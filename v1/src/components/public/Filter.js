@@ -3,7 +3,14 @@ import React, { Component } from 'react'
 export default class Filter extends Component {
     constructor(props) {
         super(props)
+      /*
+        Props:
+        1. change:
+        2. globalState:
+        3. populateAction:
+      */
 
+        // Method Binding
         this.cities = this.cities.bind(this)
         this.homeTypes = this.homeTypes.bind(this)
         this.bedrooms = this.bedrooms.bind(this)
