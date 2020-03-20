@@ -14,16 +14,25 @@ export default class BoxView extends Component {
     }
 
     return listingsData.map((listing, index) => {
+      let priceString = listing.price.toString()
+      if (priceString.length === 5) {
+        priceString = priceString.slice(0,2) + ',' + priceString.slice(2,5)
+      }
+      if (priceString.length === 6) {
+        priceString = priceString.slice(0,3) + ',' + priceString.slice(3,6)
+      }
       return ( <div className="col-md-3" key={index}>
             <div className="listing">
               <div className="listing-img" style={{background: `url("${listing.image}") no-repeat center center`}}>
                 <span className="address"> {listing.address} </span>
                 <div className="details">
                   <div className="col-md-3">
+                    {/* Use a face generator for this section */}
                     <div className="user-img"></div>
                   </div>
                   <div className="col-md-9">
                     <div className="user-details">
+                      {/* Use Username generator and date generator for dynamic data here  */}
                       <span className="user-name"> Nina Smith </span>
                       <span className="post-date"> 05/05/2017</span>
                     </div>
@@ -45,7 +54,7 @@ export default class BoxView extends Component {
               </div>
 
               <div className="bottom-info">
-                <span className="price"> ${listing.price} </span>
+                <span className="price"> ${priceString} </span>
                 <span className="location"> <i className="fa fa-map-marker" aria-hidden="true"></i> {listing.city}, {listing.state} </span>
               </div>
             </div>
