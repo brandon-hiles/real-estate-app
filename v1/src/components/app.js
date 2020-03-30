@@ -1,5 +1,4 @@
-import React from 'react'
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import React from 'react';
 
 // Public components
 import Header from './public/Header.js'
@@ -7,19 +6,16 @@ import Filter from './public/Filter.js'
 import Listings from './public/Listings.js'
 import GetStarted from './public/GetStarted.js'
 
-// Data Components
-import listingsData from './data/listingsData.js'
-
-// Utils
-import getUniqueElements from './utils/uniqueElements'
-
 const axios = require('axios');
 
 export default class App extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            listingsData,
+            // Used for Filter
+            listingsData: [],
+            users: [],
+            filteredData: this.listingsData,
             city: 'All',
             homeType: 'All',
             bedrooms: '0',
@@ -31,7 +27,6 @@ export default class App extends React.Component {
             finished_basement: false,
             gym: false,
             swimming_pool: false,
-            filteredData: listingsData,
             populateFormsData: '',
             sortby: 'price-dsc',
             view: 'box',
@@ -40,61 +35,61 @@ export default class App extends React.Component {
 
         // Main Functions
         this.change = this.change.bind(this)
-        this.filteredData = this.filteredData.bind(this)
-        this.populateForms = this.populateForms.bind(this)
+        //this.filteredData = this.filteredData.bind(this)
+        //this.populateForms = this.populateForms.bind(this)
         this.changeView = this.changeView.bind(this)
 
-        this.newData = this.newData.bind(this)
+        //this.newData = this.newData.bind(this)
+    }
 
-       // this.checkBoxFilters = this.checkBoxFilters.bind(this)
-      }
-    
-      componentDidMount() {
-       const NUMBER = '1'; // Number of files we want to test
-       const URI = 'https://stupefied-mccarthy-ecaf46.netlify.com/.netlify/functions/api/data'; 
-       const URL = URI + NUMBER;
+    // Define our component lifestyle methods
+    componentDidMount() {
+        const NUMBER = '1'; // Number of files we want to test
+        const URI = 'https://stupefied-mccarthy-ecaf46.netlify.com/.netlify/functions/api/data/'; // API Endpoint
 
-       axios.get(URL).then(res => {
-          setState({
-            listingsData
-          })
-        })
-      }
+        const HOME_URL = URI + 'housing/' + NUMBER;
+        const USER_URL = URI + 'users/' + NUMBER;
+        axios.get(HOME_URL).then(res => {
+           this.setState({
+             listingsData: res.data
+           })
+         })
+         axios.get(USER_URL).then(res => {
+           this.setState({
+            users: res.data
+           })
+         })
+       }
 
-      componentWillMount() {
-        var listingsData = this.state.listingsData.sort((a,b) => {
-          return a.price - b.price
-        })
-    
-        this.setState({
-          listingsData
-        })
-      }
-    
-      change(event) {
+       change(event) {
         let name = event.target.name;
         let value = (event.target.type === 'checkbox') ? event.target.checked : event.target.value;
     
         this.setState({
           [name]: value
         }, () => {
-          //console.log(this.state)
-          this.filteredData()
+          console.log(this.state)
+          //this.filteredData()
         })
-      }
-    
+      }   
+
       changeView(view) {
         this.setState({
           view: view
         })
       }
+     
+      render() {
+        return(
+            <div>
+                <section id="content-area">
+                  <Listings listingsData={this.state.listingsData} change={this.change} globalState={this.state} changeView = {this.changeView}/>
+                </section>
+            </div>
+        )
+     }
 
-      // checkBoxFilters(data, property) {
-      //   if (this.state[property] == true) {
-      //     data.filter((item) => {return item.extras[property] === true})
-      //   }
-      // }
-
+      /*
       newData() {
         var newData = this.state.listingsData.filter((item) => {
           let priceCondition = item.price >= this.state.min_price && item.price <= this.state.max_price;
@@ -187,17 +182,6 @@ export default class App extends React.Component {
           }
         })
       }
+*/
 
-
-    render() {
-        return(
-            <div>
-                <Header />
-                <section id="content-area">
-                    <Filter change={this.change} globalState={this.state} populateAction={this.populateForms} />
-                    <Listings listingsData={this.state.filteredData} change={this.change} globalState={this.state} changeView = {this.changeView}/>
-                </section>
-            </div>
-        )
-    }
 }
