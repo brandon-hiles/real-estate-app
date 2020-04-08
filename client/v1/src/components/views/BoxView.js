@@ -26,23 +26,22 @@ export default class BoxView extends Component {
               <div className="listing-img" style={{background: `url("${listing.image}") no-repeat center center`}}>
                 <span className="address"> {listing.address} </span>
                 <div className="details">
-                  <div className="col-md-3">
+                  <div>
                     {/* Use a face generator for this section */}
                     <div className="user-img"></div>
-                  </div>
-                  <div className="col-md-9">
                     <div className="user-details">
-                      {/* Use Username generator and date generator for dynamic data here  */}
                       <span className="user-name"> Nina Smith </span>
                       <span className="post-date"> 05/05/2017</span>
                     </div>
+                  </div>
+                  <div>
                     <div className="listing-details">
                       <div className="floor-space">
                       <i className="fa fa-square-o" aria-hidden="true"></i> <span>{listing.floorSpace}ft&sup2;</span>
                       </div>
                       <div className="bedrooms">
                         <i className="fa fa-bed" aria-hidden="true"></i>
-                        <span>{listing.rooms} bedrooms</span>
+                        <span>{listing.room} bedrooms</span>
                       </div>
                     </div>
 

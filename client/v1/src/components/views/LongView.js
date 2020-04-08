@@ -33,7 +33,7 @@ export default class LongView extends Component {
                     </div>
                     <div className="bedrooms">
                       <i className="fa fa-bed" aria-hidden="true"></i>
-                      <span>{listing.rooms} bedrooms</span>
+                      <span>{listing.room} bedrooms</span>
                     </div>
                   </div>
 

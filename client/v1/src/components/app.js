@@ -4,7 +4,6 @@ import React from 'react';
 import Header from './public/Header.js'
 import Filter from './public/Filter.js'
 import Listings from './public/Listings.js'
-import GetStarted from './public/GetStarted.js'
 
 const axios = require('axios');
 
