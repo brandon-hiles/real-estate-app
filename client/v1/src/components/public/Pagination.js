@@ -44,17 +44,19 @@ export default class Pagination extends Component {
     }
 
     render() {
+      let arr = [...Array(this.state.listingsData.length).keys()].map(x => ++x)
         return(
             <section id="pagination">
               <div className="row">
                 <ul className="pages">
                   <li>Prev</li>
-                  {/* Auto-generate these numbers */}
-                  <li className="active">1</li>
-                  <li>2</li>
-                  <li>3</li>
-                  <li>4</li>
-                  <li>5</li>
+                  {arr.map((val) => {
+                    if ({val} == this.state.current) {
+                      return (<li key={val} className="active"> {val} </li>)
+                    } else {
+                      return(<li key={val}> {val} </li>)
+                    }
+                  })} 
                   <li>Next</li>
                 </ul>
               </div>
