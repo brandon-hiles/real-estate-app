@@ -7,7 +7,7 @@ export default class LongView extends Component {
   }
 
   view() {
-    var {listingsData} = this.props
+    var {listingsData, users} = this.props
 
     if(listingsData == undefined || listingsData.length == 0) {
       return "Sorry your filter did not match any listing"
@@ -20,12 +20,12 @@ export default class LongView extends Component {
               <span className="address"> {listing.address} </span>
               <div className="details">
                 <div className="col-md-3">
-                  <div className="user-img"></div>
+                  <div className="user-img" style={{background: `url("${users[index].image}") no-repeat center center`}}></div>
                 </div>
                 <div className="col-md-9">
                   <div className="user-details">
-                    <span className="user-name"> Nina Smith </span>
-                    <span className="post-date"> 05/05/2017</span>
+                    <span className="user-name"> {users[index].name} </span>
+                    <span className="post-date"> {users[index].date}</span>
                   </div>
                   <div className="listing-details">
                     <div className="floor-space">

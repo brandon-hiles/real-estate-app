@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
 export default class BoxView extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.view = this.view.bind(this)
   }
 
   view() {
-    var {listingsData} = this.props
+    var {listingsData, users} = this.props
 
     if(listingsData == undefined || listingsData.length == 0) {
       return "Sorry your filter did not match any listing"
@@ -30,8 +30,8 @@ export default class BoxView extends Component {
                     {/* Use a face generator for this section */}
                     <div className="user-img"></div>
                     <div className="user-details">
-                      <span className="user-name"> Nina Smith </span>
-                      <span className="post-date"> 05/05/2017</span>
+                      <span className="user-name"> {users[index].name} </span>
+                      <span className="post-date"> {users[index].date}</span>
                     </div>
                   </div>
                   <div>
