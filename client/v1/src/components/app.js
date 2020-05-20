@@ -5,6 +5,9 @@ import Header from './public/Header.js'
 import Filter from './public/Filter.js'
 import Listings from './public/Listings.js'
 
+// Utils
+import getUniqueElements from './utils/uniqueElements'
+
 const axios = require('axios');
 
 export default class App extends React.Component {
@@ -29,7 +32,11 @@ export default class App extends React.Component {
             populateFormsData: '',
             sortby: 'price-dsc',
             view: 'box',
-            search: ''
+            search: '',
+          // Pagniation controls
+            prev: false,
+            next: false,
+            current: "1"
         }
 
         // Main Functions
@@ -37,6 +44,7 @@ export default class App extends React.Component {
         //this.filteredData = this.filteredData.bind(this)
         //this.populateForms = this.populateForms.bind(this)
         this.changeView = this.changeView.bind(this)
+        this.paritionData = this.paritionData.bind(this)
 
         //this.newData = this.newData.bind(this)
     }
@@ -49,7 +57,7 @@ export default class App extends React.Component {
         const HOME_URL = URI + 'housing/' + NUMBER;
         const USER_URL = URI + 'users/' + NUMBER;
         axios.get(HOME_URL).then(res => {
-           this.setState({
+          this.setState({
              listingsData: res.data
            })
          })
@@ -59,6 +67,19 @@ export default class App extends React.Component {
            })
          })
        }
+
+       // Pagination Section:
+       paritionData(data) {
+        {/* Problem in BoxView Components */}
+        let filterData = []
+        let indexArr = [...Array(Math.round(data.length/12)).keys()].map(x => ++x) // Generate an array of 1 to N/12
+
+      for (let i = 0; i < indexArr.length; i++) {
+        filterData.push(data.slice(i*12,i*12+12))
+      }
+
+        return filterData
+    }
 
        change(event) {
         let name = event.target.name;
@@ -77,18 +98,7 @@ export default class App extends React.Component {
           view: view
         })
       }
-     
-      render() {
-        return(
-            <div>
-                <section id="content-area">
-                  <Listings listingsData={this.state.listingsData} users={this.state.users} change={this.change} globalState={this.state} changeView = {this.changeView}/>
-                </section>
-            </div>
-        )
-     }
 
-      /*
       newData() {
         var newData = this.state.listingsData.filter((item) => {
           let priceCondition = item.price >= this.state.min_price && item.price <= this.state.max_price;
@@ -181,6 +191,17 @@ export default class App extends React.Component {
           }
         })
       }
-*/
+
+      render() {
+        return(
+            <div>
+              <Header />
+                <section id="content-area">
+                {/*<Filter change={this.change} globalState={this.state} populateAction={this.populateForms} />*/}
+                  <Listings listingsData={this.state.listingsData} users={this.state.users} change={this.change} globalState={this.state} changeView = {this.changeView}/>
+                </section>
+            </div>
+        )
+     }
 
 }

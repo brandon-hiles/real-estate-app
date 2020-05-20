@@ -6,9 +6,6 @@ export default class Pagination extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            prev: false,
-            next: true,
-            current: "1",
             listingsData: []
         }
         this.paritionData = this.paritionData.bind(this)
@@ -49,15 +46,15 @@ export default class Pagination extends Component {
             <section id="pagination">
               <div className="row">
                 <ul className="pages">
-                  <li>Prev</li>
+                  <li id="prev">Prev</li>
                   {arr.map((val) => {
                     if ({val} == this.state.current) {
                       return (<li key={val} className="active"> {val} </li>)
                     } else {
-                      return(<li key={val}> {val} </li>)
+                      return(<li key={val} id= {val}> {val} </li>)
                     }
                   })} 
-                  <li>Next</li>
+                  <li id="next">Next</li>
                 </ul>
               </div>
             </section>
