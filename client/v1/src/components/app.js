@@ -43,8 +43,8 @@ export default class App extends React.Component {
 
     // Define our component lifestyle methods
     componentDidMount() {
-        const NUMBER = '1'; // Number of files we want to test
-        const URI = 'https://stupefied-mccarthy-ecaf46.netlify.com/.netlify/functions/api/data/'; // API Endpoint
+        const NUMBER = '24'; // Number of files we want to test
+        const URI = 'https://stupefied-mccarthy-ecaf46.netlify.app/.netlify/functions/api/data/'; // API Endpoint
 
         const HOME_URL = URI + 'housing/' + NUMBER;
         const USER_URL = URI + 'users/' + NUMBER;
@@ -82,7 +82,7 @@ export default class App extends React.Component {
         return(
             <div>
                 <section id="content-area">
-                  <Listings listingsData={this.state.listingsData} change={this.change} globalState={this.state} changeView = {this.changeView}/>
+                  <Listings listingsData={this.state.listingsData} users={this.state.users} change={this.change} globalState={this.state} changeView = {this.changeView}/>
                 </section>
             </div>
         )
