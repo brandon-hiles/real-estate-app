@@ -1,20 +1,20 @@
+// 3rd party libaries
 import React from 'react';
+import axios from 'axios';
 
 // Public components
-import Header from './public/Header.js'
-import Filter from './public/Filter.js'
-import Listings from './public/Listings.js'
+import Header from './public/header.js'
+import Filter from './public/filter.js'
+import Listings from './public/listings.js'
 
 // Utils
 import getUniqueElements from './utils/uniqueElements'
-
-const axios = require('axios');
 
 export default class App extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            // Used for Filter
+            // Filter State variables
             listingsData: [],
             users: [],
             filteredData: this.listingsData,
@@ -33,10 +33,8 @@ export default class App extends React.Component {
             sortby: 'price-dsc',
             view: 'box',
             search: '',
-          // Pagniation controls
-            prev: false,
-            next: false,
-            current: "1"
+          // Pagination state variables
+            current: 1
         }
 
         // Main Functions
@@ -44,9 +42,11 @@ export default class App extends React.Component {
         //this.filteredData = this.filteredData.bind(this)
         //this.populateForms = this.populateForms.bind(this)
         this.changeView = this.changeView.bind(this)
-        this.paritionData = this.paritionData.bind(this)
 
         //this.newData = this.newData.bind(this)
+
+        this.previous = this.previous.bind(this)
+        this.pageParition = this.pageParition.bind(this)
     }
 
     // Define our component lifestyle methods
@@ -57,8 +57,10 @@ export default class App extends React.Component {
         const HOME_URL = URI + 'housing/' + NUMBER;
         const USER_URL = URI + 'users/' + NUMBER;
         axios.get(HOME_URL).then(res => {
+          let data = this.pageParition(res.data)
+          console.log(data)
           this.setState({
-             listingsData: res.data
+             listingsData: data
            })
          })
          axios.get(USER_URL).then(res => {
@@ -68,18 +70,6 @@ export default class App extends React.Component {
          })
        }
 
-       // Pagination Section:
-       paritionData(data) {
-        {/* Problem in BoxView Components */}
-        let filterData = []
-        let indexArr = [...Array(Math.round(data.length/12)).keys()].map(x => ++x) // Generate an array of 1 to N/12
-
-      for (let i = 0; i < indexArr.length; i++) {
-        filterData.push(data.slice(i*12,i*12+12))
-      }
-
-        return filterData
-    }
 
        change(event) {
         let name = event.target.name;
@@ -192,13 +182,35 @@ export default class App extends React.Component {
         })
       }
 
+      /* Pagination functions */
+      pageParition(data) {
+        let filterData = []
+        let indexArr = [...Array(Math.round(data.length/12)).keys()].map(x => ++x) // Generate an array of 1 to N/12
+
+        for (let i = 0; i < indexArr.length; i++) {
+           filterData.push(data.slice(i*12,i*12+12))
+        }
+
+        return filterData
+      }
+
+      previous() {
+        if (this.state.current !== 1 && this.state.current > 0) {
+          // We shouldn't be allowed to go before the first page
+          let previousPage = this.state.current - 1
+          this.setState({
+            current: previousPage
+          })
+        }
+      }
+
       render() {
         return(
             <div>
-              <Header />
+              {/*<Header />*/}
                 <section id="content-area">
-                {/*<Filter change={this.change} globalState={this.state} populateAction={this.populateForms} />*/}
-                  <Listings listingsData={this.state.listingsData} users={this.state.users} change={this.change} globalState={this.state} changeView = {this.changeView}/>
+                  {/*<Filter change={this.change} globalState={this.state} populateAction={this.populateForms} />*/}
+                  {<Listings listingsData={this.state.listingsData} users={this.state.users} change={this.change} globalState={this.state} changeView = {this.changeView}/>}
                 </section>
             </div>
         )
