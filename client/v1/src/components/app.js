@@ -58,14 +58,14 @@ export default class App extends React.Component {
         const USER_URL = URI + 'users/' + NUMBER;
         axios.get(HOME_URL).then(res => {
           let data = this.pageParition(res.data)
-          console.log(data)
           this.setState({
              listingsData: data
            })
          })
          axios.get(USER_URL).then(res => {
+           let data = this.pageParition(res.data)
            this.setState({
-            users: res.data
+            users: data
            })
          })
        }
@@ -210,7 +210,7 @@ export default class App extends React.Component {
               {/*<Header />*/}
                 <section id="content-area">
                   {/*<Filter change={this.change} globalState={this.state} populateAction={this.populateForms} />*/}
-                  {<Listings listingsData={this.state.listingsData} users={this.state.users} change={this.change} globalState={this.state} changeView = {this.changeView}/>}
+                  {<Listings listingsData={this.state.listingsData} users={this.state.users} change={this.change} globalState={this.state} changeView = {this.changeView} current={this.state.current} />}
                 </section>
             </div>
         )
