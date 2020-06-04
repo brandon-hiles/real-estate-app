@@ -30,7 +30,7 @@ export default class Listings extends Component {
         Generate our listings data
       */
 
-        var {listingsData, users} = this.props
+        var {listingsData, users, current} = this.props
 
         if(listingsData == undefined || listingsData.length == 0) {
             return "Sorry your filter did not match any listing";
@@ -38,16 +38,18 @@ export default class Listings extends Component {
       
           if(this.props.globalState.view == 'box') { // Box view
             return (
-              <BoxView listingsData = {listingsData} users = {users}/>
+              <BoxView listingsData = {listingsData[current]} users = {users[current]}/>
             )
           } else { // Long view
             return (
-              <LongView listingsData = {listingsData} users = {users}/>
+              <LongView listingsData = {listingsData[current]} users = {users[current]}/>
               )
           }
     }
 
     render () {
+      var {listingsData, current} = this.props
+
       return (
           <section id="listings">
             <section className="search-area">
@@ -72,7 +74,7 @@ export default class Listings extends Component {
               {this.loopListings()}
             </section>
   
-            <Pagination />
+            <Pagination data={listingsData} current={current}/>
           </section>
       )
     }
