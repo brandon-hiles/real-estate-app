@@ -27,8 +27,7 @@ export default class BoxView extends Component {
                 <span className="address"> {listing.address} </span>
                 <div className="details">
                   <div>
-                    {/* Use a face generator for this section */}
-                    <div className="user-img"></div>
+                    <div className="user-img" style={{background: `url("${users[index].image}") no-repeat center center`}}></div>
                     <div className="user-details">
                       <span className="user-name"> {users[index].name} </span>
                       <span className="post-date"> {users[index].date}</span>

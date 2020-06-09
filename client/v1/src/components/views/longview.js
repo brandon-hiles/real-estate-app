@@ -13,6 +13,7 @@ export default class LongView extends Component {
       return "Sorry your filter did not match any listing"
     }
 
+    // Display Issue with this component
     return listingsData.map((listing, index) => {
         return (<div className="col-md-12 col-lg-6" key={index}>
           <div className="listing">

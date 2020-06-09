@@ -3,7 +3,11 @@ import React, { Component } from 'react'
 const axios = require('axios');
 
 export default class Pagination extends Component {
-    constructor(props) {
+    /*
+
+    */
+
+  constructor(props) {
         super(props)
     }
 

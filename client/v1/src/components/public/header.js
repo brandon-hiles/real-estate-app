@@ -3,6 +3,11 @@ import React, { Component} from 'react';
 import '../../sass/app.scss';
 
 export default class Header extends Component {
+  /*
+  Header Component: This is a dummy component that displays our Header information.
+
+  No Props are included with this component.
+  */
 
   render () {
     return (

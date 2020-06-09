@@ -1,14 +1,17 @@
 import React, { Component } from 'react'
 
 export default class Filter extends Component {
-    constructor(props) {
+  /*
+    Filter Component: This components purpose is to display a filter bar on the right that can manipulate the state.
+
+    Props:
+    - change -> Function used to change the state based on if user clicks on a box.
+    - globalState -> The state of APP Component
+    - populateAction -> update the populateFormsData Attribute.
+  */
+  
+  constructor(props) {
         super(props)
-      /*
-        Props:
-        1. change:
-        2. globalState:
-        3. populateAction:
-      */
 
         // Method Binding
         this.cities = this.cities.bind(this)

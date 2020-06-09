@@ -10,13 +10,15 @@ import '../../sass/app.scss';
 
 export default class Listings extends Component {
     /*
-      Listings Component: This our component to display our listings.
+      Listings Component: This components purpose is to display our listings.
 
       Props:
-      1. listingsData Json file (either remote or local) that has our listings information
-      2. change: This method is used to manipulate the state.
-      3. globalState: Passes the entire state to the component
-      4. cchangeView: This props is used to change how we change the viewå
+      - listingsData -> listings data file (JSON format) gathered from backend services
+      - users -> users data file (JSON format) gathered from external source.
+      - change -> Function used to change the state based on if user clicks a checkbox.
+      - globalState -> The state of APP Component.
+      - changeView -> Function that changes the view attribute of App state.
+      - current -> Returns the current page number.
     */
 
     constructor(props) {
