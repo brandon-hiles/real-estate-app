@@ -14,10 +14,11 @@ export default class App extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            // Filter State variables
+            // State Variables used for storing data
             listingsData: [],
             users: [],
             filteredData: this.listingsData,
+            // Filter State variables
             city: 'All',
             homeType: 'All',
             bedrooms: '0',
