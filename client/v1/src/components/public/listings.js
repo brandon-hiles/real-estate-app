@@ -59,7 +59,7 @@ export default class Listings extends Component {
             </section>
   
             <section className="sortby-area">
-              <div className="results"> {this.props.globalState.listingsData.length} results found </div>
+              <div className="results"> {this.props.globalState.listingsData.flat().length} results found </div>
               <div className="sort-options">
                 <select name="sortby" className="sortby" onChange={this.props.change}>
                   <option value="price-dsc"> Lowest Price </option>
