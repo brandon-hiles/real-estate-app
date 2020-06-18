@@ -20,14 +20,14 @@ export default class LongView extends Component {
             <div className="listing-img" style={{background: `url("${listing.image}") no-repeat center center`}}>
               <span className="address"> {listing.address} </span>
               <div className="details">
-                <div className="col-md-3">
+                <div className="user-info">
                   <div className="user-img" style={{background: `url("${users[index].image}") no-repeat center center`}}></div>
-                </div>
-                <div className="col-md-9">
-                  <div className="user-details">
+                  <div className="user-details-long">
                     <span className="user-name"> {users[index].name} </span>
                     <span className="post-date"> {users[index].date}</span>
                   </div>
+                </div>
+                <div className="listings-info">
                   <div className="listing-details">
                     <div className="floor-space">
                     <i className="fa fa-square-o" aria-hidden="true"></i> <span>{listing.floorSpace}ft&sup2;</span>

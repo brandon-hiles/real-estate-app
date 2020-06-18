@@ -100,7 +100,7 @@
 
         .details {
           transition: all 0.4s ease-in-out;
-          opacity: 0;
+          opacity: 1;
           padding: 30px 30px 0 30px;
           position: absolute;
           top: 0;
@@ -131,6 +131,34 @@
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
+          }
+
+          .user-details-long {
+            vertical-align: top;
+            display: block;
+            padding: 0 0 30px 0;
+
+            .user-name {
+              font-weight: 300;
+              font-size: 0.9rem;
+              display: block;
+              color: rgba(255, 255, 255, 1);
+              margin-top: 3px;
+              margin-bottom: 5px;
+            }
+            .post-date {
+              font-size: 0.9rem;
+              display: block;
+              color: rgba(205, 181, 181, 0.8);
+            }
+          }
+
+          .user-info {
+            float: left
+          }
+
+          .listings-info {
+            margin-left: 100px;
           }
 
           .user-details {
