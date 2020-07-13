@@ -40,19 +40,21 @@ export default class App extends React.Component {
 
         // Main Functions
         this.change = this.change.bind(this)
-        //this.filteredData = this.filteredData.bind(this)
-        //this.populateForms = this.populateForms.bind(this)
+        this.filteredData = this.filteredData.bind(this)
+        this.populateForms = this.populateForms.bind(this)
         this.changeView = this.changeView.bind(this)
 
-        //this.newData = this.newData.bind(this)
+        this.newData = this.newData.bind(this)
 
+        this.next = this.next.bind(this)
         this.previous = this.previous.bind(this)
         this.pageParition = this.pageParition.bind(this)
+        this.selectPage = this.selectPage.bind(this)
     }
 
     // Define our component lifestyle methods
     componentDidMount() {
-        const NUMBER = '24'; // Number of files we want to test
+        const NUMBER = '80'; // Number of files we want to test
         const URI = 'https://stupefied-mccarthy-ecaf46.netlify.app/.netlify/functions/api/data/'; // API Endpoint
 
         const HOME_URL = URI + 'housing/' + NUMBER;
@@ -60,7 +62,8 @@ export default class App extends React.Component {
         axios.get(HOME_URL).then(res => {
           let data = this.pageParition(res.data)
           this.setState({
-             listingsData: data
+             listingsData: data,
+             filterData: data
            })
          })
          axios.get(USER_URL).then(res => {
@@ -198,23 +201,53 @@ export default class App extends React.Component {
       previous() {
         if (this.state.current !== 1 && this.state.current > 0) {
           // We shouldn't be allowed to go before the first page
-          let previousPage = this.state.current - 1
           this.setState({
-            current: previousPage
+            current: this.state.current - 1
           })
         }
       }
 
-      render() {
-        return(
-            <div>
-              {/*<Header />*/}
-                <section id="content-area">
-                  {/*<Filter change={this.change} globalState={this.state} populateAction={this.populateForms} />*/}
-                  {<Listings listingsData={this.state.listingsData} users={this.state.users} change={this.change} globalState={this.state} changeView = {this.changeView} current={this.state.current} />}
-                </section>
-            </div>
-        )
-     }
+      next() {
+        if (this.state.current < this.state.listingsData.length) {
+          this.setState({
+            current: this.state.current + 1
+          })
+        }
+      }
 
+      selectPage(pageId) {
+        this.setState({
+          current: pageId
+        })
+      }
+      render() {
+        let data = this.state.listingsData
+        let arr = [...Array(data.length).keys()].map(x => ++x)
+        
+        return(
+          <div>
+            <Header />
+             <section id="content-area">
+             <Filter change={this.change} globalState={this.state} populateAction={this.populateForms} /> 
+              <Listings listingsData={this.state.listingsData} users={this.state.users} change={this.change} globalState={this.state} changeView = {this.changeView} current={this.state.current-1} previous={this.previous}/>
+              <section id="pagination">
+                <div className="row">
+                  <ul className="pages">
+                    <li id="prev" onClick = {this.previous}>Prev</li>
+                    {arr.map((val) => {
+                      if (val == this.state.current) {
+                        return (<li key={val} className="active" onClick={e => this.selectPage(e.target.id)}> {val} </li>)
+                      } else {
+                        return(<li key={val} id= {val} onClick={e => this.selectPage(e.target.id)}> {val} </li>)
+                      }
+                    })} 
+                    <li id="next" onClick = {this.next}> Next</li>
+                  </ul>
+                </div>
+              </section>
+             </section>
+          </div>
+          ) 
+      }
+  
 }
