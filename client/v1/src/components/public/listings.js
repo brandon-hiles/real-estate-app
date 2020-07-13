@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 // View Components
 import BoxView from '../views/boxview'
 import LongView from '../views/longview'
-import Pagination from './pagination'
 
 // Styles
 import '../../sass/app.scss';
@@ -50,7 +49,7 @@ export default class Listings extends Component {
     }
 
     render () {
-      var {listingsData, current} = this.props
+      var {listingsData, current, globalState, previous} = this.props
 
       return (
           <section id="listings">
@@ -75,8 +74,6 @@ export default class Listings extends Component {
             <section className="listings-results">
               {this.loopListings()}
             </section>
-  
-            <Pagination data={listingsData} current={current}/>
           </section>
       )
     }
