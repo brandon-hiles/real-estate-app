@@ -14,10 +14,10 @@ export default class App extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            // State Variables used for storing data
+            // Data stored via external API Calls
             listingsData: [],
             users: [],
-            filteredData: this.listingsData,
+            filteredData: [],
             // Filter State variables
             city: 'All',
             homeType: 'All',
@@ -38,32 +38,40 @@ export default class App extends React.Component {
             current: 1
         }
 
-        // Main Functions
+        // Filter Functions
         this.change = this.change.bind(this)
         this.filteredData = this.filteredData.bind(this)
-        this.populateForms = this.populateForms.bind(this)
         this.changeView = this.changeView.bind(this)
 
-        this.newData = this.newData.bind(this)
-
+        // Pagination Functions
         this.next = this.next.bind(this)
         this.previous = this.previous.bind(this)
         this.pageParition = this.pageParition.bind(this)
         this.selectPage = this.selectPage.bind(this)
     }
 
-    // Define our component lifestyle methods
+    // Grab our Data via API GET Calls
     componentDidMount() {
-        const NUMBER = '80'; // Number of files we want to test
         const URI = 'https://stupefied-mccarthy-ecaf46.netlify.app/.netlify/functions/api/data/'; // API Endpoint
 
-        const HOME_URL = URI + 'housing/' + NUMBER;
-        const USER_URL = URI + 'users/' + NUMBER;
+        const HOME_URL = URI + 'housing/';
+        const USER_URL = URI + 'users/';
         axios.get(HOME_URL).then(res => {
           let data = this.pageParition(res.data)
+          let flatData = data.flat()
+
+          let cities = getUniqueElements(flatData, "city")
+          let homeTypes = getUniqueElements(flatData, "homeType")
+          let bedrooms = getUniqueElements(flatData, "room")
+
           this.setState({
              listingsData: data,
-             filterData: data
+             filteredData: data,
+             populateFormsData: {
+              homeTypes,
+              bedrooms,
+              cities
+            }
            })
          })
          axios.get(USER_URL).then(res => {
@@ -82,8 +90,7 @@ export default class App extends React.Component {
         this.setState({
           [name]: value
         }, () => {
-          console.log(this.state)
-          //this.filteredData()
+          this.filteredData()
         })
       }   
 
@@ -93,20 +100,15 @@ export default class App extends React.Component {
         })
       }
 
-      newData() {
-        var newData = this.state.listingsData.filter((item) => {
+      filteredData() {
+        // Find a different way around newData for updating our state of filtered data. (02/13/2020)
+        var newData = this.state.listingsdData[this.state.current].filter((item) => {
           let priceCondition = item.price >= this.state.min_price && item.price <= this.state.max_price;
           let floorCondition = item.floorSpace >= this.state.min_floor_space && item.floorSpace <= this.state.max_floor_space
           let bedRoomCondition = item.rooms >= this.state.bedrooms
           return priceCondition && floorCondition && bedRoomCondition;
         })
-        return newData
-      }
 
-      filteredData() {
-        // Find a different way around newData for updating our state of filtered data. (02/13/2020)
-        var newData = this.newData()
-    
         if (this.state.city != "All") {
           newData = newData.filter((item) => {
             return item.city == this.state.city
@@ -171,20 +173,6 @@ export default class App extends React.Component {
           filteredData: newData
         })
       }
-    
-      populateForms() {
-    
-         let cities = getUniqueElements(this.state.listingsData, "city")
-         let homeTypes = getUniqueElements(this.state.listingsData, "homeType")
-         let bedrooms = getUniqueElements(this.state.listingsData, "rooms")
-        this.setState({
-          populateFormsData: {
-            homeTypes,
-            bedrooms,
-            cities
-          }
-        })
-      }
 
       /* Pagination functions */
       pageParition(data) {
@@ -223,31 +211,32 @@ export default class App extends React.Component {
       render() {
         let data = this.state.listingsData
         let arr = [...Array(data.length).keys()].map(x => ++x)
-        
+
+
         return(
           <div>
             <Header />
              <section id="content-area">
-             <Filter change={this.change} globalState={this.state} populateAction={this.populateForms} /> 
-              <Listings listingsData={this.state.listingsData} users={this.state.users} change={this.change} globalState={this.state} changeView = {this.changeView} current={this.state.current-1} previous={this.previous}/>
-              <section id="pagination">
-                <div className="row">
-                  <ul className="pages">
-                    <li id="prev" onClick = {this.previous}>Prev</li>
-                    {arr.map((val) => {
-                      if (val == this.state.current) {
-                        return (<li key={val} className="active" onClick={e => this.selectPage(e.target.id)}> {val} </li>)
-                      } else {
-                        return(<li key={val} id= {val} onClick={e => this.selectPage(e.target.id)}> {val} </li>)
-                      }
-                    })} 
-                    <li id="next" onClick = {this.next}> Next</li>
-                  </ul>
-                </div>
+                <Filter change={this.change} globalState={this.state} />     
+                 <Listings listingsData={this.state.listingsData} users={this.state.users} change={this.change} globalState={this.state} changeView = {this.changeView} current={this.state.current-1} previous={this.previous}/>
+               <section id="pagination">
+                 <div className="row">
+                   <ul className="pages">
+                     <li id="prev" onClick = {this.previous}>Prev</li>
+                     {arr.map((val) => {
+                       if (val == this.state.current) {
+                         return (<li key={val} className="active" onClick={e => this.selectPage(e.target.id)}> {val} </li>)
+                       } else {
+                         return(<li key={val} id= {val} onClick={e => this.selectPage(e.target.id)}> {val} </li>)
+                       }
+                     })} 
+                     <li id="next" onClick = {this.next}> Next</li>
+                   </ul>
+                 </div>
+               </section>
               </section>
-             </section>
-          </div>
-          ) 
+           </div>
+           ) 
       }
   
 }
