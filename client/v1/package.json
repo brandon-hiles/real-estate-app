@@ -4,7 +4,8 @@
   "description": "Cedar property advisors is a real-estate application that helps you find your perfect new home with a responsive easy-to-use application.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -40,6 +41,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",
+    "serve": "^11.3.2",
     "style-loader": "^1.1.3"
   }
 }

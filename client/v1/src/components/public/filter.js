@@ -7,7 +7,6 @@ export default class Filter extends Component {
     Props:
     - change -> Function used to change the state based on if user clicks on a box.
     - globalState -> The state of APP Component
-    - populateAction -> update the populateFormsData Attribute.
   */
   
   constructor(props) {
@@ -17,10 +16,6 @@ export default class Filter extends Component {
         this.cities = this.cities.bind(this)
         this.homeTypes = this.homeTypes.bind(this)
         this.bedrooms = this.bedrooms.bind(this)
-    }
-
-    componentWillMount() {
-        this.props.populateAction()
     }
 
     cities() {
