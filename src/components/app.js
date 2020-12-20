@@ -11,6 +11,8 @@ import Listings from './public/listings.js'
 import getUniqueElements from './utils/uniqueElements'
 
 export default class App extends React.Component {
+    _isMounted = false;
+
     constructor(props) {
         super(props)
         this.state = {
@@ -52,6 +54,7 @@ export default class App extends React.Component {
 
     // Grab our Data via API GET Calls
     componentDidMount() {
+        this._isMounted = true;
         const URI = 'https://stupefied-mccarthy-ecaf46.netlify.app/.netlify/functions/api/data/'; // API Endpoint
 
         const HOME_URL = URI + 'housing/';
@@ -82,11 +85,15 @@ export default class App extends React.Component {
          })
        }
 
+      componentWillUnmount() {
+        this._isMounted = false;
+      }
 
        change(event) {
         let name = event.target.name;
         let value = (event.target.type === 'checkbox') ? event.target.checked : event.target.value;
-    
+        console.log("Name:" + name)
+        console.log("Value:" + value)
         this.setState({
           [name]: value
         }, () => {
@@ -102,13 +109,13 @@ export default class App extends React.Component {
 
       filteredData() {
         // Find a different way around newData for updating our state of filtered data. (02/13/2020)
-        var newData = this.state.listingsdData[this.state.current].filter((item) => {
+        var newData = this.state.filteredData[this.state.current].filter((item) => { 
           let priceCondition = item.price >= this.state.min_price && item.price <= this.state.max_price;
           let floorCondition = item.floorSpace >= this.state.min_floor_space && item.floorSpace <= this.state.max_floor_space
           let bedRoomCondition = item.rooms >= this.state.bedrooms
+          console.log(priceCondition)
           return priceCondition && floorCondition && bedRoomCondition;
         })
-
         if (this.state.city != "All") {
           newData = newData.filter((item) => {
             return item.city == this.state.city
@@ -211,14 +218,12 @@ export default class App extends React.Component {
       render() {
         let data = this.state.listingsData
         let arr = [...Array(data.length).keys()].map(x => ++x)
-
-
         return(
           <div>
             <Header />
              <section id="content-area">
                 <Filter change={this.change} globalState={this.state} />     
-                 <Listings listingsData={this.state.listingsData} users={this.state.users} change={this.change} globalState={this.state} changeView = {this.changeView} current={this.state.current-1} previous={this.previous}/>
+                 <Listings listingsData={this.state.filteredData} users={this.state.users} change={this.change} globalState={this.state} changeView = {this.changeView} current={this.state.current-1} previous={this.previous}/>
                <section id="pagination">
                  <div className="row">
                    <ul className="pages">
@@ -235,7 +240,7 @@ export default class App extends React.Component {
                  </div>
                </section>
               </section>
-           </div>
+                    </div>
            ) 
       }
   
